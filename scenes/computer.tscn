@@ -1,0 +1,127 @@
+[gd_scene load_steps=10 format=3 uid="uid://ciwymoyvm47l5"]
+
+[ext_resource type="Texture2D" uid="uid://dfwpsejqrxsn3" path="res://assets/computer/PatchRegular.png" id="1_hvmbc"]
+[ext_resource type="FontFile" uid="uid://dw8fmqxrn3vqv" path="res://assets/fonts/W95FA.otf" id="1_wcknm"]
+[ext_resource type="Texture2D" uid="uid://basqeo7de8cb7" path="res://assets/computer/PatchInverted.png" id="2_xga6l"]
+[ext_resource type="Texture2D" uid="uid://ogmnaeguk4oa" path="res://assets/computer/Flag.png" id="3_0nafy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xnhcm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cttw7"]
+draw_center = false
+border_width_top = 3
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2da1i"]
+texture = ExtResource("2_xga6l")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aosno"]
+texture = ExtResource("1_hvmbc")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ko0y5"]
+texture = ExtResource("2_xga6l")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+
+[node name="WindowsDesktop" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.501961, 0.501961, 1)
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -82.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xnhcm")
+
+[node name="Panel" type="Panel" parent="Panel"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = -81.0
+offset_right = -3.0
+offset_bottom = -52.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_cttw7")
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 16.0
+offset_right = 226.0
+offset_bottom = 68.0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_wcknm")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/hover = SubResource("StyleBoxTexture_2da1i")
+theme_override_styles/normal = SubResource("StyleBoxTexture_aosno")
+text = "Start"
+icon = ExtResource("3_0nafy")
+expand_icon = true
+
+[node name="Time" type="Panel" parent="Panel"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -208.0
+offset_top = 18.0
+offset_right = -14.0
+offset_bottom = -12.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ko0y5")
+
+[node name="Label" type="Label" parent="Panel/Time"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_wcknm")
+theme_override_font_sizes/font_size = 45
+text = "12:30 PM"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Window" type="Window" parent="."]
+title = "Globe Protocols"
+initial_position = 2
+size = Vector2i(500, 350)
