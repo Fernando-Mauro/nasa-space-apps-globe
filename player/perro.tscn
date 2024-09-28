@@ -1,0 +1,109 @@
+[gd_scene load_steps=16 format=3 uid="uid://luueblsy7262"]
+
+[ext_resource type="Texture2D" uid="uid://d04psxp71eoi7" path="res://Assets/perro/Idle.png" id="1_c3818"]
+[ext_resource type="Script" path="res://player/perro.gd" id="1_i4s64"]
+[ext_resource type="Texture2D" uid="uid://252bxwyajtmo" path="res://Assets/perro/Walk.png" id="2_rqbqi"]
+[ext_resource type="AudioStream" uid="uid://cfv6ak6rhqd2g" path="res://sounds/player/footstep.wav" id="4_sm1ky"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3yvxi"]
+atlas = ExtResource("1_c3818")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1bgv"]
+atlas = ExtResource("1_c3818")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wd3q8"]
+atlas = ExtResource("1_c3818")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pkidr"]
+atlas = ExtResource("1_c3818")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5in24"]
+atlas = ExtResource("2_rqbqi")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qym0f"]
+atlas = ExtResource("2_rqbqi")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vhkgd"]
+atlas = ExtResource("2_rqbqi")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_edhwd"]
+atlas = ExtResource("2_rqbqi")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ku7c"]
+atlas = ExtResource("2_rqbqi")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h5f4n"]
+atlas = ExtResource("2_rqbqi")
+region = Rect2(240, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0ehil"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3yvxi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f1bgv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wd3q8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pkidr")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5in24")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qym0f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vhkgd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_edhwd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ku7c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h5f4n")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[node name="perro" type="CharacterBody2D"]
+y_sort_enabled = true
+script = ExtResource("1_i4s64")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+y_sort_enabled = true
+position = Vector2(4, -15)
+scale = Vector2(0.541667, 0.625)
+sprite_frames = SubResource("SpriteFrames_0ehil")
+animation = &"idle"
+frame = 2
+frame_progress = 0.742532
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_sm1ky")
+volume_db = 10.0
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true

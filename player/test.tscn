@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dg48mkrdxfrsf"]
+
+[ext_resource type="PackedScene" uid="uid://6sb2bn2nrbyw" path="res://player/personaje.tscn" id="1_xmfem"]
+[ext_resource type="PackedScene" uid="uid://luueblsy7262" path="res://player/perro.tscn" id="2_5rtrh"]
+
+[node name="test" type="Node2D"]
+y_sort_enabled = true
+
+[node name="player" parent="." instance=ExtResource("1_xmfem")]
+position = Vector2(106, 78)
+scale = Vector2(1.03036, 1.02008)
+v_speed = 35
+
+[node name="perro" parent="." instance=ExtResource("2_5rtrh")]
+position = Vector2(77, 75)
+speed = 20
