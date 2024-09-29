@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0fwa8ih1hx45"
-path="res://.godot/imported/menu-background.webp-759912e13704462ef8f496701d8d6f09.ctex"
+uid="uid://btjwomeqf3wgp"
+path="res://.godot/imported/sprite_sheet_personaje.png-649cee15a484ed948c0200ffd37413eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/backgrounds/menu-background.webp"
-dest_files=["res://.godot/imported/menu-background.webp-759912e13704462ef8f496701d8d6f09.ctex"]
+source_file="res://Assets/sprite_sheet_personaje.png"
+dest_files=["res://.godot/imported/sprite_sheet_personaje.png-649cee15a484ed948c0200ffd37413eb.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

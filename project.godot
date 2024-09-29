@@ -10,12 +10,31 @@ config_version=5
 
 [application]
 
-config/name="nasa-space-apps"
-run/main_scene="res://scenes/main-menu.tscn"
+config/name="Farm"
+run/main_scene="res://Scenes/world.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*res://Scripts/global.gd"
+
+[display]
+
+window/size/viewport_width=1200
+window/size/viewport_height=600
+window/stretch/scale=2.5
+
+[input]
+
+click={
+"deadzone": 0.5,
+"events": [null, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
+]
+}
+
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
