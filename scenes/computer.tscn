@@ -7,9 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://basqeo7de8cb7" path="res://assets/computer/PatchInverted.png" id="2_xga6l"]
 [ext_resource type="Texture2D" uid="uid://ogmnaeguk4oa" path="res://assets/computer/Flag.png" id="3_0nafy"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t35m0"]
-texture = ExtResource("2_537tl")
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xnhcm"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cttw7"]
@@ -37,6 +34,13 @@ texture_margin_top = 2.0
 texture_margin_right = 2.0
 texture_margin_bottom = 2.0
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a0jv5"]
+content_margin_left = 50.0
+content_margin_top = 50.0
+content_margin_right = 50.0
+content_margin_bottom = 50.0
+texture = ExtResource("2_537tl")
+
 [node name="WindowsDesktop" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -55,12 +59,6 @@ offset_bottom = -85.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0.501961, 0.501961, 1)
-
-[node name="Button" type="Button" parent="ColorRect"]
-layout_mode = 0
-offset_right = 127.0
-offset_bottom = 108.0
-theme_override_styles/normal = SubResource("StyleBoxTexture_t35m0")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -133,5 +131,39 @@ theme_override_font_sizes/font_size = 45
 text = "12:30 PM"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -85.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GridContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="GridContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_a0jv5")
+
+[node name="Label" type="Label" parent="GridContainer/VBoxContainer"]
+layout_mode = 2
+text = "Noticias"
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="GridContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="GridContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_a0jv5")
+
+[node name="Label" type="Label" parent="GridContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Noticias"
+horizontal_alignment = 1
 
 [connection signal="draw" from="Panel/Time/TimeLabel" to="." method="_on_label_draw"]
