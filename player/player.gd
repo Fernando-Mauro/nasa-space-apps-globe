@@ -2,7 +2,8 @@ extends CharacterBody2D
 @export var v_speed = 200
 @export var h_speed = 200
 
-
+const lines: Array[String] = ["Hola","adios"] 
+	
 func _ready():
 	$AnimatedSprite2D.play("front_idle")
 	
@@ -11,10 +12,14 @@ func _physics_process(delta):
 	player_action(delta)
 
 func player_action(delta):
-	
-	if Input.is_action_pressed("action"):
-		$AnimatedSprite2D.play("action")
+	#pass
+	if Input.is_action_pressed("action_main"):
+		DialogManager.start_dialog(global_position, lines)
 		
+
+	
+	
+	
 func player_movement(delta):
 	
 	var x_movement: float = (-Input.get_action_strength("move_up")+ Input.get_action_strength("move_down"))

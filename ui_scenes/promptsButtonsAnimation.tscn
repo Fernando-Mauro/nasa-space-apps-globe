@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6iguip5h7fnw"]
+
+[ext_resource type="SpriteFrames" uid="uid://bquc21eeuhb5h" path="res://ui_scenes/inputPrompts.tres" id="1_1051v"]
+
+[node name="botonSprite" type="AnimatedSprite2D"]
+sprite_frames = ExtResource("1_1051v")
+animation = &"controller_ActionDown"

@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dg48mkrdxfrsf"]
+[gd_scene load_steps=7 format=3 uid="uid://dg48mkrdxfrsf"]
 
 [ext_resource type="PackedScene" uid="uid://6sb2bn2nrbyw" path="res://player/personaje.tscn" id="1_xmfem"]
 [ext_resource type="PackedScene" uid="uid://luueblsy7262" path="res://player/perro.tscn" id="2_5rtrh"]
 [ext_resource type="Texture2D" uid="uid://b0xmn700tn6tm" path="res://Assets/muebles/interior/furniture pack grey outline.png" id="3_vbot0"]
+[ext_resource type="PackedScene" uid="uid://critukwgst15d" path="res://ui_scenes/text_box.tscn" id="4_2s8y8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1mhr5"]
 texture = ExtResource("3_vbot0")
@@ -174,5 +175,11 @@ format = 2
 [node name="TileMapLayer" type="TileMapLayer" parent="TileMap"]
 tile_map_data = PackedByteArray(0, 0, 11, 0, 3, 0, 0, 0, 15, 0, 8, 0, 0, 0)
 tile_set = SubResource("TileSet_8mq6q")
+
+[node name="text_box" parent="TileMap" instance=ExtResource("4_2s8y8")]
+offset_left = 115.0
+offset_top = 47.0
+offset_right = 137.0
+offset_bottom = 70.0
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
