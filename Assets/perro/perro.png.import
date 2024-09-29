@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://252bxwyajtmo"
-path="res://.godot/imported/Walk.png-caba6b4cbcafeba14061cf347e95048d.ctex"
+uid="uid://bdyjxm8bstpwa"
+path="res://.godot/imported/perro.png-f303c405c55bbde705bd191b7fa2584b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/perro/Walk.png"
-dest_files=["res://.godot/imported/Walk.png-caba6b4cbcafeba14061cf347e95048d.ctex"]
+source_file="res://Assets/perro/perro.png"
+dest_files=["res://.godot/imported/perro.png-f303c405c55bbde705bd191b7fa2584b.ctex"]
 
 [params]
 

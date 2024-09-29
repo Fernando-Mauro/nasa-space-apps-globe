@@ -163,10 +163,6 @@ position = Vector2(106, 78)
 scale = Vector2(1.03036, 1.02008)
 v_speed = 35
 
-[node name="perro" parent="." instance=ExtResource("2_5rtrh")]
-position = Vector2(77, 75)
-speed = 20
-
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_8mq6q")
 format = 2
@@ -176,3 +172,6 @@ tile_map_data = PackedByteArray(0, 0, 11, 0, 3, 0, 0, 0, 15, 0, 8, 0, 0, 0)
 tile_set = SubResource("TileSet_8mq6q")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+[node name="perro" parent="." instance=ExtResource("2_5rtrh")]
+position = Vector2(86, 76)
