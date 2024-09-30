@@ -9,15 +9,6 @@ func _ready():
 	
 func _physics_process(delta):
 	player_movement(delta)
-	player_action(delta)
-
-func player_action(delta):
-	#pass
-	if Input.is_action_pressed("action_main"):
-		DialogManager.start_dialog(global_position, lines)
-		
-
-	
 	
 	
 func player_movement(delta):

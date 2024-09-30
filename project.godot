@@ -22,9 +22,10 @@ DialogManager="*res://ui_scenes/dialog_manager.gd"
 
 [display]
 
-window/size/viewport_width=1200
-window/size/viewport_height=960
-window/stretch/scale=4.0
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/scale=3.0
 
 [input]
 
@@ -64,6 +65,11 @@ action_secondary={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":1,"pressure":0.0,"pressed":true,"script":null)
 ]
 }
+
+[internationalization]
+
+locale/translation_remaps={}
+locale/translations=PackedStringArray("res://translation/tr.en.translation", "res://translation/tr.es.translation")
 
 [rendering]
 

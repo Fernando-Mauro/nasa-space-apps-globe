@@ -2,4 +2,7 @@ extends Node
 
 
 var player_pos:Vector2
-var player_input_type:int
+
+
+var language_act = 0
+var language_codes = ["es","en"]
