@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://luueblsy7262"]
+[gd_scene load_steps=14 format=3 uid="uid://luueblsy7262"]
 
 [ext_resource type="Script" path="res://player/perro.gd" id="1_i4s64"]
 [ext_resource type="Texture2D" uid="uid://bdyjxm8bstpwa" path="res://Assets/perro/perro.png" id="3_6tws4"]
@@ -79,6 +79,9 @@ animations = [{
 "speed": 4.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_mynjw"]
+radius = 1.0
+
 [node name="perro" type="CharacterBody2D"]
 y_sort_enabled = true
 script = ExtResource("1_i4s64")
@@ -91,7 +94,11 @@ volume_db = 10.0
 one_shot = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -4)
+position = Vector2(-1, -4)
 sprite_frames = SubResource("SpriteFrames_vfnyf")
 animation = &"walk"
 frame_progress = 0.51893
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -3)
+shape = SubResource("CircleShape2D_mynjw")

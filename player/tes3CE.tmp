@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://dg48mkrdxfrsf"]
+
+[ext_resource type="PackedScene" uid="uid://6sb2bn2nrbyw" path="res://player/personaje.tscn" id="1_xmfem"]
+[ext_resource type="PackedScene" uid="uid://luueblsy7262" path="res://player/perro.tscn" id="2_5rtrh"]
+[ext_resource type="PackedScene" uid="uid://bpert7jispnld" path="res://scripts/Interaction/interaction_area.tscn" id="4_xqudn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kfgym"]
+size = Vector2(118.25, 78.25)
+
+[node name="test" type="Node2D"]
+y_sort_enabled = true
+
+[node name="player" parent="." instance=ExtResource("1_xmfem")]
+position = Vector2(106, 78)
+scale = Vector2(1.03036, 1.02008)
+v_speed = 35
+
+[node name="perro" parent="." instance=ExtResource("2_5rtrh")]
+position = Vector2(86, 76)
+collision_mask = 4
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+[node name="interaction_area" parent="." instance=ExtResource("4_xqudn")]
+actionToDo = "action_main"
+actionKey = "a"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interaction_area"]
+position = Vector2(193.875, 70.875)
+shape = SubResource("RectangleShape2D_kfgym")

@@ -2,16 +2,15 @@ extends CharacterBody2D
 @export var v_speed = 200
 @export var h_speed = 200
 
-const lines: Array[String] = ["Hola","adios"] 
 	
 func _ready():
-	$AnimatedSprite2D.play("front_idle")
+	$AnimatedSprite2D.play("side_idle")
 	
-func _physics_process(delta):
-	player_movement(delta)
+func _physics_process(_delta):
+	player_movement()
 	
 	
-func player_movement(delta):
+func player_movement():
 	
 	var x_movement: float = (-Input.get_action_strength("move_up")+ Input.get_action_strength("move_down"))
 	var y_movement: float = (-Input.get_action_strength("move_left")+Input.get_action_strength("move_right"))
@@ -27,7 +26,7 @@ func player_movement(delta):
 	Global.player_pos = global_position
 	
 
-func p_animation(movement):
+func p_animation(_movement):
 	var anim = $AnimatedSprite2D
 	
 	if velocity.x > 0 :
@@ -42,5 +41,3 @@ func p_animation(movement):
 			$AudioStreamPlayer2D.pitch_scale = randf_range(.8,1.2)
 			$AudioStreamPlayer2D.play()
 			$Timer.start(0.4)
-		
-		

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://6sb2bn2nrbyw"]
+[gd_scene load_steps=15 format=3 uid="uid://6sb2bn2nrbyw"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_811yv"]
 [ext_resource type="Texture2D" uid="uid://dcnjuua6xbktm" path="res://Assets/player/player_2.png" id="2_saibn"]
@@ -77,8 +77,12 @@ animations = [{
 radius = 4.99999
 height = 20.0
 
-[node name="player" type="CharacterBody2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_krgj2"]
+size = Vector2(11, 17)
+
+[node name="player" type="CharacterBody2D" groups=["player"]]
 y_sort_enabled = true
+collision_layer = 2
 script = ExtResource("1_811yv")
 v_speed = 25
 h_speed = 50
@@ -88,7 +92,6 @@ texture_filter = 1
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_p7xgv")
 animation = &"side_walk"
-frame_progress = 0.783335
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -10)
@@ -100,3 +103,7 @@ one_shot = true
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_d2omb")
 volume_db = 15.0
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_krgj2")

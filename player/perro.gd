@@ -4,7 +4,7 @@ extends CharacterBody2D
 @export var speed = 25
 @export var treshold = 50
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if global_position.distance_to(Global.player_pos) >treshold:
 		velocity = global_position.direction_to(Global.player_pos)*speed	
 		p_animation(1)
