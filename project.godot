@@ -25,7 +25,6 @@ DialogManager="*res://ui_scenes/dialog_manager.gd"
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
-window/stretch/scale=3.0
 
 [global_group]
 
