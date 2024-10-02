@@ -3,7 +3,10 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	$"VBoxContainer/start-button".text = tr("START")
+	$"VBoxContainer/options-button".text = tr("OPTIONS")
+	$"VBoxContainer/exit-button".text = tr("EXIT")
+	$"VBoxContainer/language-button".text = tr("LANGUAGE")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -25,3 +28,17 @@ func _on_exit_pressed() -> void:
 
 func _on_computer_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/computer.tscn")
+	
+func _on_language_pressed():
+	if Global.language_act >= Global.language_codes.size()-1:
+		Global.language_act = 0
+	else:
+		Global.language_act+=1
+	TranslationServer.set_locale(Global.language_codes[Global.language_act])
+	updateUI()
+
+func updateUI():
+	$"VBoxContainer/start-button".text = tr("START")
+	$"VBoxContainer/options-button".text = tr("OPTIONS")
+	$"VBoxContainer/exit-button".text = tr("EXIT")
+	$"VBoxContainer/language-button".text = tr("LANGUAGE")
