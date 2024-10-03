@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ogmnaeguk4oa"
-path="res://.godot/imported/Flag.png-0287fe8ad65a8edc29186b285f9d29f6.ctex"
+uid="uid://dpx1t4h6v4mj7"
+path="res://.godot/imported/cosas-granja.png-05e590bf9af752995711da7f3c8c19da.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/computer/Flag.png"
-dest_files=["res://.godot/imported/Flag.png-0287fe8ad65a8edc29186b285f9d29f6.ctex"]
+source_file="res://Assets/plants/cosas-granja.png"
+dest_files=["res://.godot/imported/cosas-granja.png-05e590bf9af752995711da7f3c8c19da.ctex"]
 
 [params]
 

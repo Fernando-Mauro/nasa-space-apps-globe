@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ogmnaeguk4oa"
-path="res://.godot/imported/Flag.png-0287fe8ad65a8edc29186b285f9d29f6.ctex"
+uid="uid://bux56xm5n31x7"
+path="res://.godot/imported/tileset-pasto.png-0b3e8b5ae14cfedf06d72b9d47bd22b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/computer/Flag.png"
-dest_files=["res://.godot/imported/Flag.png-0287fe8ad65a8edc29186b285f9d29f6.ctex"]
+source_file="res://Assets/backgrounds/tileset-pasto.png"
+dest_files=["res://.godot/imported/tileset-pasto.png-0b3e8b5ae14cfedf06d72b9d47bd22b4.ctex"]
 
 [params]
 
