@@ -1,0 +1,139 @@
+[gd_scene load_steps=18 format=3 uid="uid://dlralj4cxorei"]
+
+[ext_resource type="Script" path="res://scrips/growling_zone.gd" id="1_450l4"]
+[ext_resource type="Texture2D" uid="uid://bux56xm5n31x7" path="res://Assets/backgrounds/tileset-pasto.png" id="2_3py6r"]
+[ext_resource type="Texture2D" uid="uid://dpx1t4h6v4mj7" path="res://Assets/plants/cosas-granja.png" id="3_1e787"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8jng2"]
+atlas = ExtResource("2_3py6r")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ui161"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8jng2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hv74x"]
+size = Vector2(14, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7lx2m"]
+atlas = ExtResource("3_1e787")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uhn34"]
+atlas = ExtResource("3_1e787")
+region = Rect2(16, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cd80i"]
+atlas = ExtResource("3_1e787")
+region = Rect2(32, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nlrvk"]
+atlas = ExtResource("3_1e787")
+region = Rect2(48, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ddmko"]
+atlas = ExtResource("3_1e787")
+region = Rect2(64, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sbub3"]
+atlas = ExtResource("3_1e787")
+region = Rect2(48, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7jnrc"]
+atlas = ExtResource("3_1e787")
+region = Rect2(0, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nvh1t"]
+atlas = ExtResource("3_1e787")
+region = Rect2(16, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tom8w"]
+atlas = ExtResource("3_1e787")
+region = Rect2(32, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_auara"]
+atlas = ExtResource("3_1e787")
+region = Rect2(48, 64, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_56eqk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7lx2m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uhn34")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cd80i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nlrvk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ddmko")
+}],
+"loop": true,
+"name": &"cornGrowling",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sbub3")
+}],
+"loop": true,
+"name": &"none",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7jnrc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nvh1t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tom8w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_auara")
+}],
+"loop": true,
+"name": &"tomatoGrowling",
+"speed": 0.0
+}]
+
+[node name="growlingZone" type="StaticBody2D"]
+position = Vector2(82, 48)
+script = ExtResource("1_450l4")
+
+[node name="hoed_land" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ui161")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_hv74x")
+
+[node name="plants" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, -7)
+sprite_frames = SubResource("SpriteFrames_56eqk")
+animation = &"none"
+
+[node name="tomato_timer" type="Timer" parent="."]
+wait_time = 3.0
+
+[node name="corn_timer" type="Timer" parent="."]
+wait_time = 3.0
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="timeout" from="tomato_timer" to="." method="_on_tomato_timer_timeout"]
+[connection signal="timeout" from="corn_timer" to="." method="_on_corn_timer_timeout"]

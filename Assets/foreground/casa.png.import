@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://bpwemf1f01kkk"
-=======
-uid="uid://bux56xm5n31x7"
->>>>>>> e5842437a3976f017dcbdb17fc513b303f23ccf3
-path="res://.godot/imported/tileset-pasto.png-0b3e8b5ae14cfedf06d72b9d47bd22b4.ctex"
+uid="uid://b22ucd8q2n86f"
+path="res://.godot/imported/casa.png-625dad7168b580036575af964ae5863f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/backgrounds/tileset-pasto.png"
-dest_files=["res://.godot/imported/tileset-pasto.png-0b3e8b5ae14cfedf06d72b9d47bd22b4.ctex"]
+source_file="res://Assets/foreground/casa.png"
+dest_files=["res://.godot/imported/casa.png-625dad7168b580036575af964ae5863f.ctex"]
 
 [params]
 
