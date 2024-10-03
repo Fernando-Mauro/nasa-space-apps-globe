@@ -11,8 +11,6 @@ func _process(delta: float) -> void:
 		$GlobeWindow/CenterContainer/VideoStreamPlayer.play()
 	
 func _on_glosary_pressed() -> void:	
-	var size = get_parent_area_size() - Vector2(50,200)
-	$GlosaryWindow.size = size
 	$GlosaryWindow.show()
 
 func _on_glosary_window_close_requested() -> void:

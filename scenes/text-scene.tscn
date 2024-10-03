@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://df6u6j54dhs32"]
+
+[ext_resource type="Script" path="res://scenes/text_scene.gd" id="1_iq00o"]
+[ext_resource type="Texture2D" uid="uid://d1iotr4y7tcwl" path="res://assets/computer/arrowBack.png" id="1_vpge2"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iq00o")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 2
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 276.0
+offset_bottom = 276.0
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("1_vpge2")
+stretch_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -625.0
+offset_top = -290.0
+offset_right = 625.0
+offset_bottom = 290.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
+
+[node name="Label" type="Label" parent="MarginContainer"]
+layout_mode = 2
+text = "HOla prueba para ver si si agarra o no :D"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_back_button_pressed"]

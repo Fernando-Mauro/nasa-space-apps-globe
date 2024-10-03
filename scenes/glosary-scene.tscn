@@ -1,0 +1,80 @@
+[gd_scene load_steps=6 format=3 uid="uid://4oshqtqytynq"]
+
+[ext_resource type="FontFile" uid="uid://dw8fmqxrn3vqv" path="res://assets/fonts/W95FA.otf" id="1_i1lcc"]
+[ext_resource type="Texture2D" uid="uid://c7o7ijp2dmt4v" path="res://assets/computer/soil.png" id="1_njgi0"]
+[ext_resource type="Script" path="res://scenes/glosary_scene.gd" id="2_hktqq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_reyc0"]
+bg_color = Color(0, 0.0953332, 0.52, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="Theme" id="Theme_fwuc7"]
+Label/font_sizes/font_size = 50
+Label/fonts/font = ExtResource("1_i1lcc")
+Label/styles/normal = null
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_reyc0")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_fwuc7")
+script = ExtResource("2_hktqq")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -625.0
+offset_top = -290.0
+offset_right = 625.0
+offset_bottom = 290.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 50
+theme_override_constants/v_separation = 50
+columns = 5
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/GridContainer/PanelContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/GridContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 50
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/GridContainer/PanelContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+texture = ExtResource("1_njgi0")
+expand_mode = 4
+
+[node name="Label" type="Label" parent="MarginContainer/GridContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "PH"
+horizontal_alignment = 1
+
+[connection signal="gui_input" from="MarginContainer/GridContainer/PanelContainer" to="." method="_on_panel_container_gui_input"]

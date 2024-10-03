@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://ciwymoyvm47l5"]
+[gd_scene load_steps=21 format=3 uid="uid://ciwymoyvm47l5"]
 
 [ext_resource type="Script" path="res://scenes/computer.gd" id="1_43ijm"]
 [ext_resource type="Texture2D" uid="uid://dfwpsejqrxsn3" path="res://assets/computer/PatchRegular.png" id="1_hvmbc"]
@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://ba82snvudxnev" path="res://assets/computer/globe_logo.png" id="7_kvw4r"]
 [ext_resource type="VideoStream" path="res://assets/video/globeProgram.ogv" id="8_d3ryk"]
 [ext_resource type="Script" path="res://scenes/glosary_window_option.gd" id="8_se4dr"]
+[ext_resource type="PackedScene" uid="uid://4oshqtqytynq" path="res://scenes/glosary-scene.tscn" id="9_spdqh"]
+[ext_resource type="PackedScene" uid="uid://df6u6j54dhs32" path="res://scenes/text-scene.tscn" id="10_vebga"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xnhcm"]
 
@@ -207,37 +209,16 @@ horizontal_alignment = 1
 [node name="GlosaryWindow" type="Window" parent="."]
 mode = 2
 title = "Glosario"
-initial_position = 2
-size = Vector2i(500, 200)
+position = Vector2i(15, 40)
+size = Vector2i(1250, 580)
+visible = false
 script = ExtResource("8_se4dr")
 
-[node name="MarginContainer" type="MarginContainer" parent="GlosaryWindow"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 20
-theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 20
+[node name="ListScene" parent="GlosaryWindow" instance=ExtResource("9_spdqh")]
 
-[node name="VBoxContainer" type="VBoxContainer" parent="GlosaryWindow/MarginContainer"]
-layout_mode = 2
-
-[node name="OptionButton" type="OptionButton" parent="GlosaryWindow/MarginContainer/VBoxContainer"]
-layout_mode = 2
-selected = 0
-item_count = 3
-popup/item_0/text = "Instructivo"
-popup/item_1/text = "Ph Suelo"
-popup/item_1/id = 1
-popup/item_2/text = "Precipatición"
-popup/item_2/id = 2
-
-[node name="Label" type="Label" parent="GlosaryWindow/MarginContainer/VBoxContainer"]
-layout_mode = 2
-autowrap_mode = 3
+[node name="TextScene" parent="GlosaryWindow" instance=ExtResource("10_vebga")]
+visible = false
+visibility_layer = 3
 
 [node name="GlobeWindow" type="Window" parent="."]
 mode = 2
@@ -258,5 +239,4 @@ stream = ExtResource("8_d3ryk")
 [connection signal="pressed" from="MarginContainer/GridContainer/Globe/Button" to="." method="_on_globe_pressed"]
 [connection signal="pressed" from="MarginContainer/GridContainer/glosario/Button" to="." method="_on_glosary_pressed"]
 [connection signal="close_requested" from="GlosaryWindow" to="." method="_on_glosary_window_close_requested"]
-[connection signal="item_selected" from="GlosaryWindow/MarginContainer/VBoxContainer/OptionButton" to="GlosaryWindow" method="_on_option_button_item_selected"]
 [connection signal="close_requested" from="GlobeWindow" to="." method="_on_globe_window_close_requested"]
