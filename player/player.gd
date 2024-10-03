@@ -8,7 +8,7 @@ func _ready():
 	
 func _physics_process(_delta):
 	player_movement()
-	
+	camera_location()
 	
 func player_movement():
 	
@@ -25,7 +25,13 @@ func player_movement():
 	move_and_slide()
 	Global.player_pos = global_position
 	
-
+func camera_location():
+	#Cambio de camara    
+	if self.position.x >= 0:
+		Global.camera_pos = 1 #Determina en que cuandrante se encuentra para cambiar de camara
+	elif self.position.x < 0:
+		Global.camera_pos = 2
+		
 func p_animation(_movement):
 	var anim = $AnimatedSprite2D
 	

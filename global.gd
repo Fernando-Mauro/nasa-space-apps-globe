@@ -12,3 +12,6 @@ var plantSelected = 1 #Selecciona un numero identificador para cada planta. #1 =
 var numCarrots = 0 #Contador de frutas
 var numOnions = 0
 const animation_names = ["Error","Corn","Tomato"]#Arreglo de animaciones para paquete de semillas
+
+#--------------Camera-------------#
+var camera_pos:int
