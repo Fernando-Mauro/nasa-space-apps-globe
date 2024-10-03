@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ba82snvudxnev"
-path="res://.godot/imported/globe_logo.png-c648f7699f57694a161e7591d95d581d.ctex"
+path="res://.godot/imported/globe_logo.png-924b51fc3e195e1cc54764429e892cbc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/computer/globe_logo.png"
-dest_files=["res://.godot/imported/globe_logo.png-c648f7699f57694a161e7591d95d581d.ctex"]
+source_file="res://Assets/computer/globe_logo.png"
+dest_files=["res://.godot/imported/globe_logo.png-924b51fc3e195e1cc54764429e892cbc.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0xmn700tn6tm"
-path="res://.godot/imported/furniture pack grey outline.png-095ed67ce12bdf0651956a869d3b1a52.ctex"
+uid="uid://bb3iaqxpatdt4"
+path="res://.godot/imported/interior_casa.png-bb8e902d011fe4fc3aa06f5b4b214289.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/muebles/interior/furniture pack grey outline.png"
-dest_files=["res://.godot/imported/furniture pack grey outline.png-095ed67ce12bdf0651956a869d3b1a52.ctex"]
+source_file="res://Assets/backgrounds/interior_casa.png"
+dest_files=["res://.godot/imported/interior_casa.png-bb8e902d011fe4fc3aa06f5b4b214289.ctex"]
 
 [params]
 
