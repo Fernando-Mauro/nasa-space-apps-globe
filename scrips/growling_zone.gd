@@ -41,9 +41,6 @@ func _on_corn_timer_timeout() -> void:
 		$corn_timer.start()
 	elif corn_plant.frame == 2:
 		corn_plant.frame = 3
-		$corn_timer.start()
-	elif corn_plant.frame == 3:
-		corn_plant.frame = 4
 		plant_grown = true #La planta ha madurado, por lo que se queda en el ultimo frame
 		
 

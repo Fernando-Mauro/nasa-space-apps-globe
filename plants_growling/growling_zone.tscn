@@ -1,7 +1,7 @@
-[gd_scene load_steps=18 format=3 uid="uid://dlralj4cxorei"]
+[gd_scene load_steps=17 format=3 uid="uid://dlralj4cxorei"]
 
 [ext_resource type="Script" path="res://scrips/growling_zone.gd" id="1_450l4"]
-[ext_resource type="Texture2D" uid="uid://bux56xm5n31x7" path="res://Assets/backgrounds/tileset-pasto.png" id="2_3py6r"]
+[ext_resource type="Texture2D" uid="uid://doo8eo7k62ikr" path="res://Assets/backgrounds/tileset-pasto.png" id="2_3py6r"]
 [ext_resource type="Texture2D" uid="uid://dpx1t4h6v4mj7" path="res://Assets/plants/cosas-granja.png" id="3_1e787"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8jng2"]
@@ -38,10 +38,6 @@ region = Rect2(32, 0, 16, 32)
 atlas = ExtResource("3_1e787")
 region = Rect2(48, 0, 16, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ddmko"]
-atlas = ExtResource("3_1e787")
-region = Rect2(64, 0, 16, 32)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_sbub3"]
 atlas = ExtResource("3_1e787")
 region = Rect2(48, 32, 16, 16)
@@ -76,9 +72,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_nlrvk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ddmko")
 }],
 "loop": true,
 "name": &"cornGrowling",
@@ -111,7 +104,6 @@ animations = [{
 }]
 
 [node name="growlingZone" type="StaticBody2D"]
-position = Vector2(82, 48)
 script = ExtResource("1_450l4")
 
 [node name="hoed_land" type="AnimatedSprite2D" parent="."]
@@ -123,7 +115,7 @@ sprite_frames = SubResource("SpriteFrames_ui161")
 shape = SubResource("RectangleShape2D_hv74x")
 
 [node name="plants" type="AnimatedSprite2D" parent="."]
-position = Vector2(1, -7)
+position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_56eqk")
 animation = &"none"
 

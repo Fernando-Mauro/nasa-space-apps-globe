@@ -54,7 +54,6 @@ size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_m8i60")
-text = "Computadora"
 
 [node name="start-button" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -101,7 +100,7 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_y = 10
 theme_override_fonts/font = ExtResource("2_h5fjn")
 theme_override_font_sizes/font_size = 50
-text = "Oaxaca Simulator"
+text = "Béleguí's Story"
 
 [connection signal="pressed" from="VBoxContainer/computer-button" to="." method="_on_computer_pressed"]
 [connection signal="pressed" from="VBoxContainer/start-button" to="." method="_on_start_pressed"]
