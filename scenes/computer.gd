@@ -1,5 +1,7 @@
 extends Control
 
+@export var num = 1
+
 func _ready() -> void:
 	var currentTime = Time.get_time_dict_from_system()
 	var textTime = str(currentTime.hour) + ":" + str(currentTime.minute)
@@ -24,3 +26,15 @@ func _on_globe_pressed() -> void:
 
 func _on_globe_window_close_requested() -> void:
 	$GlobeWindow.hide()
+
+
+func _on_text_window_close_requested() -> void:
+	$TextWindow.hide()
+
+
+func _on_stadistics_button_pressed() -> void:
+	$StadisticsWindow.show()
+
+
+func _on_stadistics_window_close_requested() -> void:
+	pass # Replace with function body.

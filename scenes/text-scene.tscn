@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://df6u6j54dhs32"]
+[gd_scene load_steps=2 format=3 uid="uid://df6u6j54dhs32"]
 
 [ext_resource type="Script" path="res://scenes/text_scene.gd" id="1_iq00o"]
-[ext_resource type="Texture2D" uid="uid://d1iotr4y7tcwl" path="res://assets/computer/arrowBack.png" id="1_vpge2"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -11,16 +10,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_iq00o")
-
-[node name="TextureButton" type="TextureButton" parent="."]
-layout_mode = 2
-offset_left = 20.0
-offset_top = 20.0
-offset_right = 276.0
-offset_bottom = 276.0
-scale = Vector2(0.3, 0.3)
-texture_normal = ExtResource("1_vpge2")
-stretch_mode = 0
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -45,4 +34,4 @@ layout_mode = 2
 text = "HOla prueba para ver si si agarra o no :D"
 horizontal_alignment = 1
 
-[connection signal="pressed" from="TextureButton" to="." method="_on_back_button_pressed"]
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]

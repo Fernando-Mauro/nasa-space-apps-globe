@@ -77,4 +77,31 @@ layout_mode = 2
 text = "PH"
 horizontal_alignment = 1
 
-[connection signal="gui_input" from="MarginContainer/GridContainer/PanelContainer" to="." method="_on_panel_container_gui_input"]
+[node name="PanelContainer2" type="PanelContainer" parent="MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/GridContainer/PanelContainer2"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/GridContainer/PanelContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 50
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/GridContainer/PanelContainer2/VBoxContainer/MarginContainer"]
+layout_mode = 2
+texture = ExtResource("1_njgi0")
+expand_mode = 4
+
+[node name="Label" type="Label" parent="MarginContainer/GridContainer/PanelContainer2/VBoxContainer"]
+layout_mode = 2
+text = "PH"
+horizontal_alignment = 1
+
+[connection signal="gui_input" from="MarginContainer/GridContainer/PanelContainer" to="." method="_on_ph_container_gui_input" binds= ["1"]]
+[connection signal="gui_input" from="MarginContainer/GridContainer/PanelContainer2" to="." method="_on_ph_container_gui_input" binds= ["2"]]

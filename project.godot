@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Global="*res://global.gd"
 DialogManager="*res://ui_scenes/dialog_manager.gd"
+GlobalComputer="*res://scenes/global_computer.gd"
 
 [display]
 
