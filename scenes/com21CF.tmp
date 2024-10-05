@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://ciwymoyvm47l5"]
+[gd_scene load_steps=23 format=3 uid="uid://ciwymoyvm47l5"]
 
 [ext_resource type="Script" path="res://scenes/computer.gd" id="1_43ijm"]
 [ext_resource type="Texture2D" uid="uid://dfwpsejqrxsn3" path="res://Assets/computer/PatchRegular.png" id="1_hvmbc"]
@@ -7,12 +7,12 @@
 [ext_resource type="Texture2D" uid="uid://ogmnaeguk4oa" path="res://Assets/computer/Flag.png" id="3_0nafy"]
 [ext_resource type="Texture2D" uid="uid://cckmbke5h1rny" path="res://Assets/computer/todo.png" id="6_klrwu"]
 [ext_resource type="Texture2D" uid="uid://rvt5gj7mqnii" path="res://Assets/computer/book.png" id="7_bp4gh"]
+[ext_resource type="Texture2D" uid="uid://ba82snvudxnev" path="res://Assets/computer/globe_logo.png" id="7_kvw4r"]
 [ext_resource type="Texture2D" uid="uid://b2gcpe2qlt8li" path="res://Assets/computer/stadistics.png" id="8_5nfgo"]
 [ext_resource type="VideoStream" path="res://assets/video/globeProgram.ogv" id="8_d3ryk"]
 [ext_resource type="Script" path="res://scenes/glosary_window_option.gd" id="8_se4dr"]
 [ext_resource type="PackedScene" path="res://scenes/glosary-scene.tscn" id="9_spdqh"]
 [ext_resource type="PackedScene" path="res://scenes/text-scene.tscn" id="10_vebga"]
-[ext_resource type="FontFile" path="C:/Users/anaih/nasa-space-apps-globe/Assets/fonts/W95FA.otf" id="12_2g62s"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xnhcm"]
 
@@ -46,6 +46,7 @@ content_margin_left = 50.0
 content_margin_top = 50.0
 content_margin_right = 50.0
 content_margin_bottom = 50.0
+texture = ExtResource("7_kvw4r")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o3ibi"]
 content_margin_left = 50.0
@@ -67,9 +68,6 @@ content_margin_top = 50.0
 content_margin_right = 50.0
 content_margin_bottom = 50.0
 texture = ExtResource("8_5nfgo")
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wrkor"]
-bg_color = Color(0.875457, 0.865791, 1, 1)
 
 [node name="WindowsDesktop" type="Control"]
 layout_mode = 3
@@ -239,20 +237,10 @@ script = ExtResource("8_se4dr")
 [node name="GlobeWindow" type="Window" parent="."]
 mode = 2
 title = "Globe Program"
-position = Vector2i(15, 36)
-size = Vector2i(700, 450)
-visible = false
+position = Vector2i(15, 40)
+size = Vector2i(1250, 580)
 
-[node name="Panel" type="Panel" parent="GlobeWindow"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_wrkor")
-
-[node name="CenterContainer" type="CenterContainer" parent="GlobeWindow/Panel"]
-layout_mode = 1
+[node name="CenterContainer" type="CenterContainer" parent="GlobeWindow"]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -261,24 +249,15 @@ offset_right = 320.0
 offset_bottom = 368.0
 grow_horizontal = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="GlobeWindow/Panel/CenterContainer"]
-layout_mode = 2
-alignment = 1
-
-[node name="Label" type="Label" parent="GlobeWindow/Panel/CenterContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("12_2g62s")
-theme_override_font_sizes/font_size = 40
-text = "¿Qué es globe?"
-horizontal_alignment = 1
-
-[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="GlobeWindow/Panel/CenterContainer/VBoxContainer"]
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="GlobeWindow/CenterContainer"]
 clip_contents = true
 custom_minimum_size = Vector2(200, 200)
 layout_mode = 2
 stream = ExtResource("8_d3ryk")
-autoplay = true
+
+[node name="Button" type="Button" parent="GlobeWindow/CenterContainer"]
+layout_mode = 2
+text = "Pausa"
 
 [node name="TextWindow" type="Window" parent="."]
 title = "Esta es la window del texto"
@@ -303,5 +282,6 @@ visible = false
 [connection signal="close_requested" from="GlosaryWindow" to="." method="_on_glosary_window_close_requested"]
 [connection signal="close_requested" from="GlobeWindow" to="." method="_on_globe_window_close_requested"]
 [connection signal="ready" from="GlobeWindow" to="." method="_on_globe_window_ready"]
+[connection signal="pressed" from="GlobeWindow/CenterContainer/Button" to="." method="_on_button_pause_globe_pressed"]
 [connection signal="close_requested" from="TextWindow" to="." method="_on_text_window_close_requested"]
 [connection signal="close_requested" from="StadisticsWindow" to="." method="_on_stadistics_window_close_requested"]
