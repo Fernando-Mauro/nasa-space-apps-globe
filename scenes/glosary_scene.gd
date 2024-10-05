@@ -15,6 +15,6 @@ func _on_ph_container_gui_input(event: InputEvent, selected) -> void:
 	if (event is InputEventMouseButton) and event.is_pressed():
 		#print(selected)
 		GlobalComputer.selected = selected
-		get_parent().get_parent().get_child(5).show()
+		get_parent().get_parent().get_parent().get_child(5).show()
 		
 	pass
