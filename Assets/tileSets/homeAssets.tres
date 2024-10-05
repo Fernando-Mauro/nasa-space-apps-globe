@@ -1,8 +1,9 @@
-[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://d748sitsi67g"]
+[gd_resource type="TileSet" load_steps=9 format=3 uid="uid://d748sitsi67g"]
 
 [ext_resource type="Texture2D" uid="uid://bb3iaqxpatdt4" path="res://Assets/backgrounds/interior_casa.png" id="1_27bsl"]
 [ext_resource type="Texture2D" uid="uid://c28wyasjvgkn8" path="res://Assets/backgrounds/fondo.png" id="2_0oko8"]
 [ext_resource type="Texture2D" uid="uid://bstcj83l220pq" path="res://Assets/backgrounds/fondoExtra.png" id="3_2uo7p"]
+[ext_resource type="Texture2D" uid="uid://be1w6qrbuc4yl" path="res://Assets/backgrounds/cosas_interior_nueva.png" id="4_y7ui5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pbm7n"]
 texture = ExtResource("1_27bsl")
@@ -96,8 +97,38 @@ texture = ExtResource("3_2uo7p")
 2:1/0 = 0
 1:2/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t46s6"]
+texture = ExtResource("4_y7ui5")
+0:0/size_in_atlas = Vector2i(3, 4)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(-5, -5)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.1538, -25.2308, 16.6154, -25.2308, 16.6154, 25.2308, -14.1538, 25.2308)
+3:0/size_in_atlas = Vector2i(2, 2)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4.30769, -9.23077, 3.07692, -9.23077, 11.6923, -1.84615, 11.6923, 1.84615, 3.07692, 8, -4.30769, 8, -11.6923, 3.07692, -11.6923, -3.07692)
+5:2/size_in_atlas = Vector2i(4, 2)
+5:2/0 = 0
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-27.6923, -9.23077, -27.6923, 8, 14.1538, 8, 14.1538, -9.23077)
+9:0/size_in_atlas = Vector2i(3, 4)
+9:0/0 = 0
+8:4/size_in_atlas = Vector2i(2, 2)
+8:4/0 = 0
+10:4/size_in_atlas = Vector2i(2, 2)
+10:4/0 = 0
+2:4/size_in_atlas = Vector2i(2, 2)
+2:4/0 = 0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 5.53846, -4.30769, 14.1538, 6.76923, 14.1538, 10.4615, 5.53846)
+0:4/size_in_atlas = Vector2i(2, 2)
+0:4/0 = 0
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.76923, 6.76923, -4.30769, 9.23077, 3.07692, 9.23077, 6.76923, 5.53846, 8, 4.30769, -9.23077, 4.30769)
+0:7/size_in_atlas = Vector2i(2, 2)
+0:7/0 = 0
+2:7/size_in_atlas = Vector2i(2, 2)
+2:7/0 = 0
+
 [resource]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_pbm7n")
 sources/1 = SubResource("TileSetAtlasSource_5aoct")
 sources/2 = SubResource("TileSetAtlasSource_skjn5")
+sources/8 = SubResource("TileSetAtlasSource_t46s6")
