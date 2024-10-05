@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://ciwymoyvm47l5"]
+[gd_scene load_steps=27 format=3 uid="uid://ciwymoyvm47l5"]
 
 [ext_resource type="Script" path="res://scenes/computer.gd" id="1_43ijm"]
 [ext_resource type="Texture2D" uid="uid://dfwpsejqrxsn3" path="res://Assets/computer/PatchRegular.png" id="1_hvmbc"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://dwyy6nh75akuu" path="res://scenes/glosary-scene.tscn" id="9_spdqh"]
 [ext_resource type="PackedScene" path="res://scenes/text-scene.tscn" id="10_vebga"]
 [ext_resource type="FontFile" path="C:/Users/anaih/nasa-space-apps-globe/Assets/fonts/W95FA.otf" id="12_2g62s"]
+[ext_resource type="Texture2D" uid="uid://cvlx0dyibj1vn" path="res://Assets/computer/plomo.png" id="15_5y4c7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xnhcm"]
 
@@ -251,7 +252,7 @@ horizontal_alignment = 1
 mode = 2
 title = "Glosario"
 position = Vector2i(750, 40)
-size = Vector2i(500, 300)
+size = Vector2i(500, 250)
 script = ExtResource("8_se4dr")
 
 [node name="ColorRect" type="ColorRect" parent="GlosaryWindow"]
@@ -268,7 +269,7 @@ layout_mode = 1
 [node name="GlobeWindow" type="Window" parent="."]
 mode = 2
 title = "Globe Program"
-position = Vector2i(15, 36)
+position = Vector2i(15, 111)
 size = Vector2i(700, 450)
 
 [node name="Panel" type="Panel" parent="GlobeWindow"]
@@ -320,9 +321,34 @@ z_as_relative = false
 
 [node name="StadisticsWindow" type="Window" parent="."]
 title = "Estadisticas"
-position = Vector2i(15, 40)
-size = Vector2i(1250, 580)
-visible = false
+position = Vector2i(750, 350)
+size = Vector2i(500, 250)
+
+[node name="ColorRect" type="ColorRect" parent="StadisticsWindow"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0.719182, 0.993828, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="StadisticsWindow/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="TextureRect" type="TextureRect" parent="StadisticsWindow/ColorRect/MarginContainer"]
+layout_mode = 2
+texture = ExtResource("15_5y4c7")
+expand_mode = 2
+stretch_mode = 4
 
 [connection signal="draw" from="Panel/Time/TimeLabel" to="." method="_on_label_draw"]
 [connection signal="pressed" from="MarginContainer/GridContainer/Globe/Button" to="." method="_on_globe_pressed"]
