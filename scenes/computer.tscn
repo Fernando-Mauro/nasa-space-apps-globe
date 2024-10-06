@@ -1,12 +1,12 @@
 [gd_scene load_steps=19 format=3 uid="uid://ciwymoyvm47l5"]
 
 [ext_resource type="Script" path="res://scenes/computer.gd" id="1_43ijm"]
-[ext_resource type="Texture2D" uid="uid://dfwpsejqrxsn3" path="res://assets/computer/PatchRegular.png" id="1_hvmbc"]
-[ext_resource type="FontFile" uid="uid://dw8fmqxrn3vqv" path="res://assets/fonts/W95FA.otf" id="1_wcknm"]
-[ext_resource type="Texture2D" uid="uid://basqeo7de8cb7" path="res://assets/computer/PatchInverted.png" id="2_xga6l"]
-[ext_resource type="Texture2D" uid="uid://ogmnaeguk4oa" path="res://assets/computer/Flag.png" id="3_0nafy"]
-[ext_resource type="Texture2D" uid="uid://cckmbke5h1rny" path="res://assets/computer/todo.png" id="6_klrwu"]
-[ext_resource type="Texture2D" uid="uid://ba82snvudxnev" path="res://assets/computer/globe_logo.png" id="7_kvw4r"]
+[ext_resource type="Texture2D" uid="uid://dfwpsejqrxsn3" path="res://Assets/computer/PatchRegular.png" id="1_hvmbc"]
+[ext_resource type="FontFile" uid="uid://dw8fmqxrn3vqv" path="res://Assets/fonts/W95FA.otf" id="1_wcknm"]
+[ext_resource type="Texture2D" uid="uid://basqeo7de8cb7" path="res://Assets/computer/PatchInverted.png" id="2_xga6l"]
+[ext_resource type="Texture2D" uid="uid://ogmnaeguk4oa" path="res://Assets/computer/Flag.png" id="3_0nafy"]
+[ext_resource type="Texture2D" uid="uid://cckmbke5h1rny" path="res://Assets/computer/todo.png" id="6_klrwu"]
+[ext_resource type="Texture2D" uid="uid://ba82snvudxnev" path="res://Assets/computer/globe_logo.png" id="7_kvw4r"]
 [ext_resource type="VideoStream" path="res://assets/video/globeProgram.ogv" id="8_d3ryk"]
 [ext_resource type="Script" path="res://scenes/glosary_window_option.gd" id="8_se4dr"]
 
@@ -45,7 +45,6 @@ content_margin_bottom = 50.0
 texture = ExtResource("7_kvw4r")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_r7p3n"]
-load_path = "res://.godot/imported/book.png-c6b942737b6b8e83078a6f8111943f93.ctex"
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o3ibi"]
 content_margin_left = 50.0
