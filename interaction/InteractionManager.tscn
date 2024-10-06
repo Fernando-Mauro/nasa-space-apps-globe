@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0ycm4x563ob"]
+
+[ext_resource type="PackedScene" uid="uid://d2l5q6wuhynmx" path="res://ui_scenes/key_pressing_prompt.tscn" id="1_e4c3p"]
+[ext_resource type="Script" path="res://scrips/interaction_manager.gd" id="1_tiyyj"]
+
+[node name="InteractionManager" type="Node2D"]
+script = ExtResource("1_tiyyj")
+
+[node name="keyPressingPrompt" parent="." instance=ExtResource("1_e4c3p")]
+position = Vector2(-2, 1)
