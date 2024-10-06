@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvx1goyqkhsto"]
+
+[ext_resource type="Script" path="res://indicacion.gd" id="1_ajhfy"]
+
+[node name="indicacion" type="Label"]
+offset_right = 191.0
+offset_bottom = 82.0
+theme_override_font_sizes/font_size = 10
+text = "MOVE_LEFT"
+script = ExtResource("1_ajhfy")

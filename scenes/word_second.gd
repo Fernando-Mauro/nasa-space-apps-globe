@@ -9,8 +9,8 @@ func _physics_process(delta: float) -> void:
 	elif Global.camera_pos == 2:
 		$player/Camara2.make_current()
 		#$Player/Camera2D3.clear_current
-	$CanvasLayer/corn.text = ("= " + str(Global.numCorns))  #Se encuentra dentro de un folder, por eso '/'
-	$CanvasLayer/tomatoes.text = ("= " + str(Global.numTomatoes))
+	$CanvasLayer/corn.text = ("= " + str(Global.numCorns)+"/20")  #Se encuentra dentro de un folder, por eso '/'
+	$CanvasLayer/tomatoes.text = ("= " + str(Global.numTomatoes) +"/20")
 	
 	#if Global.numCorns >= 10 && Global.numTomatoes >= 10:
 		#get_tree().change_scene_to_file("res://scenes/word_second.tscn")

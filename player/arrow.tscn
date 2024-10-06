@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=3 uid="uid://b7fj03kj3yr4e"]
+
+[ext_resource type="Texture2D" uid="uid://blnfl5elyqk8g" path="res://Assets/player/flecha.png" id="1_mldy1"]
+[ext_resource type="Script" path="res://arrow.gd" id="2_1x7go"]
+[ext_resource type="Texture2D" uid="uid://dcnjuua6xbktm" path="res://Assets/player/player_2.png" id="2_qjroe"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xb1se"]
+atlas = ExtResource("1_mldy1")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lofe5"]
+atlas = ExtResource("1_mldy1")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_282xk"]
+atlas = ExtResource("2_qjroe")
+region = Rect2(112, 112, 56, 56)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g8tjm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xb1se")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lofe5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_282xk")
+}],
+"loop": true,
+"name": &"nothinng",
+"speed": 5.0
+}]
+
+[node name="arrow" type="AnimatedSprite2D" node_paths=PackedStringArray("animated")]
+position = Vector2(215, 102)
+sprite_frames = SubResource("SpriteFrames_g8tjm")
+script = ExtResource("2_1x7go")
+animated = NodePath(".")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 8.0
+offset_top = -5.0
+offset_right = 48.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 9
+text = "MOVE LEFT"
+metadata/_edit_use_anchors_ = true

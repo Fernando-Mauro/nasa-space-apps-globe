@@ -1,9 +1,9 @@
 [gd_scene load_steps=18 format=3 uid="uid://dlralj4cxorei"]
 
 [ext_resource type="Script" path="res://scrips/growling_zone.gd" id="1_450l4"]
-[ext_resource type="Texture2D" uid="uid://doo8eo7k62ikr" path="res://assets/backgrounds/tileset-pasto.png" id="2_3py6r"]
-[ext_resource type="Texture2D" uid="uid://dpx1t4h6v4mj7" path="res://assets/plants/cosas-granja.png" id="3_1e787"]
-[ext_resource type="Texture2D" uid="uid://dfh0c28no8b10" path="res://assets/plants/newGranja.png" id="3_ku0ts"]
+[ext_resource type="Texture2D" uid="uid://bqr3pv4js5hk2" path="res://Assets/backgrounds/tileset-pasto.png" id="2_3py6r"]
+[ext_resource type="Texture2D" uid="uid://dpx1t4h6v4mj7" path="res://Assets/plants/cosas-granja.png" id="3_1e787"]
+[ext_resource type="Texture2D" uid="uid://dfh0c28no8b10" path="res://Assets/plants/newGranja.png" id="3_ku0ts"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8jng2"]
 atlas = ExtResource("2_3py6r")

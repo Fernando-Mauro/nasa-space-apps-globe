@@ -4,8 +4,8 @@ extends Node
 var player_pos:Vector2
 
 
-var language_act = 0
-var language_codes = ["es","en"]
+var language_act = 1
+var language_codes = ["es","en","zp"]
 
 #--------Plants-----------#
 var plantSelected = 1 #Selecciona un numero identificador para cada planta. #1 = Carrot, #2 = Onion.

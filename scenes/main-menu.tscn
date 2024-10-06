@@ -81,7 +81,7 @@ anchor_bottom = 0.5
 offset_left = -245.0
 offset_top = 18.0
 offset_right = 246.0
-offset_bottom = 251.0
+offset_bottom = 268.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 16
@@ -100,7 +100,21 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_m8i60")
 
-[node name="language-button" type="Button" parent="VBoxContainer"]
+[node name="zapoteco-button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_m8i60")
+
+[node name="spanish-button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_m8i60")
+
+[node name="english-button" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -114,4 +128,6 @@ sprite_frames = SubResource("SpriteFrames_xchpx")
 
 [connection signal="pressed" from="VBoxContainer/start-button" to="." method="_on_startbutton_pressed"]
 [connection signal="pressed" from="VBoxContainer/options-button" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="VBoxContainer/language-button" to="." method="_on_language_pressed"]
+[connection signal="pressed" from="VBoxContainer/zapoteco-button" to="." method="_on_zapotecobutton_pressed"]
+[connection signal="pressed" from="VBoxContainer/spanish-button" to="." method="_on_spanishbutton_pressed"]
+[connection signal="pressed" from="VBoxContainer/english-button" to="." method="_on_englishbutton_pressed"]

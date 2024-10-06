@@ -26,7 +26,6 @@ GlobalComputer="*res://scenes/global_computer.gd"
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
-window/size/mode=3
 window/stretch/mode="canvas_items"
 
 [global_group]
@@ -88,7 +87,8 @@ computer={
 [internationalization]
 
 locale/translation_remaps={}
-locale/translations=PackedStringArray("res://translation/tr.de.translation", "res://translation/tr.en.translation", "res://translation/tr.es.translation")
+locale/translations=PackedStringArray("res://translation/tr.en.translation", "res://translation/tr.es.translation", "res://translation/tr.zp.translation")
+locale/fallback="es"
 
 [rendering]
 

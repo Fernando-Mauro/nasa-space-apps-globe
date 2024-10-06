@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://df6u6j54dhs32"]
 
 [ext_resource type="Script" path="res://scenes/text_scene.gd" id="1_iq00o"]
-[ext_resource type="FontFile" uid="uid://bstwa0hvoslk5" path="res://assets/fonts/Jersey15-Regular.ttf" id="2_dnvr5"]
+[ext_resource type="FontFile" uid="uid://bstwa0hvoslk5" path="res://Assets/fonts/Jersey15-Regular.ttf" id="2_dnvr5"]
 
 [node name="Control" type="Control"]
 layout_mode = 3

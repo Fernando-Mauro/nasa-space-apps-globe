@@ -5,7 +5,9 @@ extends Control
 func _ready() -> void:
 	$"VBoxContainer/start-button".text = tr("START")
 	$"VBoxContainer/options-button".text = tr("OPTIONS")
-	$"VBoxContainer/language-button".text = tr("LANGUAGE")
+	$"VBoxContainer/zapoteco-button".text = tr("Binniza")
+	$"VBoxContainer/spanish-button".text = tr("Español")
+	$"VBoxContainer/english-button".text = tr("English")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -17,18 +19,31 @@ func _on_startbutton_pressed() -> void:
 
 func _on_options_pressed() -> void:
 	print("options pressed")
-	
 
+
+
+func _on_zapotecobutton_pressed() -> void:
+	Global.language_act = 2;
+	Global.language_act=Global.language_act% Global.language_codes.size()
 	
-func _on_language_pressed():
-	if Global.language_act >= Global.language_codes.size()-1:
-		Global.language_act = 0
-	else:
-		Global.language_act+=1
 	TranslationServer.set_locale(Global.language_codes[Global.language_act])
 	updateUI()
+	
+func _on_spanishbutton_pressed() -> void:
+	Global.language_act = 0;
+	Global.language_act=Global.language_act% Global.language_codes.size()
+	
+	TranslationServer.set_locale(Global.language_codes[Global.language_act])
+	updateUI()
+
+func _on_englishbutton_pressed() -> void:
+	Global.language_act = 1;
+	Global.language_act=Global.language_act% Global.language_codes.size()
+	
+	TranslationServer.set_locale(Global.language_codes[Global.language_act])
+	updateUI()
+
 
 func updateUI():
 	$"VBoxContainer/start-button".text = tr("START")
 	$"VBoxContainer/options-button".text = tr("OPTIONS")
-	$"VBoxContainer/language-button".text = tr("LANGUAGE")
