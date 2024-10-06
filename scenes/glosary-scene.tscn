@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dwyy6nh75akuu"]
+[gd_scene load_steps=7 format=3 uid="uid://dwyy6nh75akuu"]
 
 [ext_resource type="FontFile" uid="uid://dw8fmqxrn3vqv" path="res://assets/fonts/W95FA.otf" id="1_i1lcc"]
 [ext_resource type="Script" path="res://scenes/glosary_scene.gd" id="2_hktqq"]
 [ext_resource type="Texture2D" uid="uid://c7o7ijp2dmt4v" path="res://assets/computer/soil.png" id="3_ct3qa"]
+[ext_resource type="Texture2D" uid="uid://dqp2ld5iv6ypf" path="res://assets/computer/Pb.png" id="4_8d47i"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_reyc0"]
 bg_color = Color(0, 0.0953332, 0.52, 1)
@@ -88,13 +89,13 @@ size_flags_horizontal = 4
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/GridContainer/PanelContainer2/VBoxContainer/MarginContainer"]
 custom_minimum_size = Vector2(30, 30)
 layout_mode = 2
-texture = ExtResource("3_ct3qa")
+texture = ExtResource("4_8d47i")
 expand_mode = 1
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="MarginContainer/GridContainer/PanelContainer2/VBoxContainer"]
 layout_mode = 2
-text = "PH"
+text = "Plomo"
 horizontal_alignment = 1
 
 [connection signal="gui_input" from="MarginContainer/GridContainer/PanelContainer" to="." method="_on_ph_container_gui_input" binds= ["1"]]

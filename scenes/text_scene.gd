@@ -14,4 +14,8 @@ func _process(delta: float) -> void:
 
 func _on_visibility_changed() -> void:
 	var selectedDay = "GLOSARY_" + GlobalComputer.selected;
-	$MarginContainer/Label.text = tr(selectedDay)
+	var selectedTitle = "TITLE-" + GlobalComputer.selected;
+	$ColorRect/MarginContainer/VBoxContainer/MarginContainer/Label.text = tr(selectedDay)
+	$ColorRect/MarginContainer/VBoxContainer/title.text = tr(selectedTitle)
+	
+	
