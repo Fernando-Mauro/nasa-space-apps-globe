@@ -1,19 +1,18 @@
-[gd_scene load_steps=26 format=3 uid="uid://ciwymoyvm47l5"]
+[gd_scene load_steps=25 format=3 uid="uid://ciwymoyvm47l5"]
 
 [ext_resource type="Script" path="res://scenes/computer.gd" id="1_43ijm"]
-[ext_resource type="Texture2D" uid="uid://dfwpsejqrxsn3" path="res://Assets/computer/PatchRegular.png" id="1_hvmbc"]
-[ext_resource type="FontFile" uid="uid://dw8fmqxrn3vqv" path="res://Assets/fonts/W95FA.otf" id="1_wcknm"]
-[ext_resource type="Texture2D" uid="uid://basqeo7de8cb7" path="res://Assets/computer/PatchInverted.png" id="2_xga6l"]
-[ext_resource type="Texture2D" uid="uid://ogmnaeguk4oa" path="res://Assets/computer/Flag.png" id="3_0nafy"]
-[ext_resource type="Texture2D" uid="uid://cckmbke5h1rny" path="res://Assets/computer/todo.png" id="6_klrwu"]
-[ext_resource type="Texture2D" uid="uid://rvt5gj7mqnii" path="res://Assets/computer/book.png" id="7_bp4gh"]
+[ext_resource type="Texture2D" uid="uid://dfwpsejqrxsn3" path="res://assets/computer/PatchRegular.png" id="1_hvmbc"]
+[ext_resource type="FontFile" uid="uid://dw8fmqxrn3vqv" path="res://assets/fonts/W95FA.otf" id="1_wcknm"]
+[ext_resource type="Texture2D" uid="uid://basqeo7de8cb7" path="res://assets/computer/PatchInverted.png" id="2_xga6l"]
+[ext_resource type="Texture2D" uid="uid://ogmnaeguk4oa" path="res://assets/computer/Flag.png" id="3_0nafy"]
+[ext_resource type="Texture2D" uid="uid://cckmbke5h1rny" path="res://assets/computer/todo.png" id="6_klrwu"]
+[ext_resource type="Texture2D" uid="uid://rvt5gj7mqnii" path="res://assets/computer/book.png" id="7_bp4gh"]
 [ext_resource type="Texture2D" uid="uid://cilqkauw0m1gp" path="res://Assets/computer/globe_logo.png" id="7_kvw4r"]
-[ext_resource type="Texture2D" uid="uid://b2gcpe2qlt8li" path="res://Assets/computer/stadistics.png" id="8_5nfgo"]
+[ext_resource type="Texture2D" uid="uid://b2gcpe2qlt8li" path="res://assets/computer/stadistics.png" id="8_5nfgo"]
 [ext_resource type="VideoStream" path="res://assets/video/globeProgram.ogv" id="8_d3ryk"]
 [ext_resource type="Script" path="res://scenes/glosary_window_option.gd" id="8_se4dr"]
 [ext_resource type="PackedScene" uid="uid://dwyy6nh75akuu" path="res://scenes/glosary-scene.tscn" id="9_spdqh"]
-[ext_resource type="PackedScene" path="res://scenes/text-scene.tscn" id="10_vebga"]
-[ext_resource type="FontFile" path="C:/Users/anaih/nasa-space-apps-globe/Assets/fonts/W95FA.otf" id="12_2g62s"]
+[ext_resource type="PackedScene" uid="uid://df6u6j54dhs32" path="res://scenes/text-scene.tscn" id="10_vebga"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xnhcm"]
 
@@ -296,7 +295,6 @@ alignment = 1
 [node name="Label" type="Label" parent="GlobeWindow/Panel/CenterContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("12_2g62s")
 theme_override_font_sizes/font_size = 40
 text = "¿Qué es globe?"
 horizontal_alignment = 1
@@ -310,13 +308,18 @@ autoplay = true
 
 [node name="TextWindow" type="Window" parent="."]
 title = "Esta es la window del texto"
-position = Vector2i(15, 40)
+position = Vector2i(15, 36)
 size = Vector2i(1250, 580)
-visible = false
 
-[node name="TextScene" parent="TextWindow" instance=ExtResource("10_vebga")]
-z_index = 2
-z_as_relative = false
+[node name="ColorRect" type="ColorRect" parent="TextWindow"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.408317, 0.821975, 0.949075, 1)
+
+[node name="Control" parent="TextWindow" instance=ExtResource("10_vebga")]
 
 [node name="StadisticsWindow" type="Window" parent="."]
 title = "Estadisticas"
