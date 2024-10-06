@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://df6u6j54dhs32"]
+[gd_scene load_steps=2 format=3 uid="uid://df6u6j54dhs32"]
 
 [ext_resource type="Script" path="res://scenes/text_scene.gd" id="1_iq00o"]
-[ext_resource type="FontFile" uid="uid://dhfr46h7pwd27" path="res://assets/fonts/Jersey15-Regular.ttf" id="2_1oa8a"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -14,31 +13,25 @@ script = ExtResource("1_iq00o")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = 8
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
-offset_left = -176.5
-offset_right = 176.5
-offset_bottom = 128.0
+anchor_bottom = 0.5
+offset_left = -625.0
+offset_top = -290.0
+offset_right = 625.0
+offset_bottom = 290.0
 grow_horizontal = 2
-theme_override_constants/margin_left = 100
-theme_override_constants/margin_top = 20
-theme_override_constants/margin_bottom = 20
+grow_vertical = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
-layout_mode = 2
-
-[node name="Title" type="Label" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("2_1oa8a")
-theme_override_font_sizes/font_size = 60
-text = "PH del suelo"
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="MarginContainer"]
 layout_mode = 2
 text = "HOla prueba para ver si si agarra o no :D"
 horizontal_alignment = 1
-visible_ratio = -0.0243902
 
 [connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]

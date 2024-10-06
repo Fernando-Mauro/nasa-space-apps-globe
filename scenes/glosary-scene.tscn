@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://dwyy6nh75akuu"]
 
-[ext_resource type="FontFile" uid="uid://dw8fmqxrn3vqv" path="res://assets/fonts/W95FA.otf" id="1_i1lcc"]
+[ext_resource type="FontFile" uid="uid://dw8fmqxrn3vqv" path="res://Assets/fonts/W95FA.otf" id="1_i1lcc"]
 [ext_resource type="Script" path="res://scenes/glosary_scene.gd" id="2_hktqq"]
-[ext_resource type="Texture2D" uid="uid://c7o7ijp2dmt4v" path="res://assets/computer/soil.png" id="3_ct3qa"]
+[ext_resource type="Texture2D" uid="uid://c7o7ijp2dmt4v" path="res://Assets/computer/soil.png" id="3_ct3qa"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_reyc0"]
 bg_color = Color(0, 0.0953332, 0.52, 1)
