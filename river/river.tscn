@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://0f885ir83mlt"]
+
+[ext_resource type="Texture2D" uid="uid://l2qqyfhftikw" path="res://Assets/backgrounds/rios.png" id="1_65din"]
+[ext_resource type="Script" path="res://scrips/river.gd" id="2_qxkij"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g7k8e"]
+atlas = ExtResource("1_65din")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wnw4f"]
+atlas = ExtResource("1_65din")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ibbqb"]
+atlas = ExtResource("1_65din")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6vypy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g7k8e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wnw4f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ibbqb")
+}],
+"loop": true,
+"name": &"river_animation",
+"speed": 2.0
+}]
+
+[node name="river" type="AnimatedSprite2D" node_paths=PackedStringArray("animated")]
+position = Vector2(268, 200)
+sprite_frames = SubResource("SpriteFrames_6vypy")
+animation = &"river_animation"
+script = ExtResource("2_qxkij")
+animated = NodePath(".")
