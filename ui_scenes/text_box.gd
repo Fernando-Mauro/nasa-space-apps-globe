@@ -5,7 +5,7 @@ extends MarginContainer
 
 const MAX_WIDTH = 256
 
-var text = ""
+@export var text = ""
 var letter_index = 0
 
 @export var letter_t = 0.03
