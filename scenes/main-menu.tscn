@@ -86,13 +86,6 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 16
 
-[node name="computer-button" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_m8i60")
-
 [node name="start-button" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
@@ -119,7 +112,6 @@ position = Vector2(670, 184)
 scale = Vector2(0.824653, 0.824653)
 sprite_frames = SubResource("SpriteFrames_xchpx")
 
-[connection signal="pressed" from="VBoxContainer/computer-button" to="." method="_on_computer_pressed"]
 [connection signal="pressed" from="VBoxContainer/start-button" to="." method="_on_startbutton_pressed"]
 [connection signal="pressed" from="VBoxContainer/options-button" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="VBoxContainer/language-button" to="." method="_on_language_pressed"]

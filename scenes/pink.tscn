@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://cfwj0s62lk433"]
+
+[ext_resource type="Texture2D" uid="uid://ca6yfo5rlaesf" path="res://Assets/animals/cerdo.png" id="1_v2oy3"]
+[ext_resource type="Script" path="res://scenes/pink.gd" id="2_0536o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6gbb"]
+atlas = ExtResource("1_v2oy3")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2cmiw"]
+atlas = ExtResource("1_v2oy3")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rfmwf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k6gbb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2cmiw")
+}],
+"loop": true,
+"name": &"pink",
+"speed": 1.0
+}]
+
+[node name="pink" type="AnimatedSprite2D" node_paths=PackedStringArray("animated")]
+position = Vector2(307.5, 68)
+scale = Vector2(1.21875, 1.125)
+sprite_frames = SubResource("SpriteFrames_rfmwf")
+animation = &"pink"
+frame_progress = 0.0693591
+script = ExtResource("2_0536o")
+animated = NodePath(".")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=4 uid="uid://bymco3vwa1bj4"]
 
-[ext_resource type="TileSet" uid="uid://d748sitsi67g" path="res://assets/tileSets/homeassets.tres" id="1_2m37k"]
+[ext_resource type="TileSet" uid="uid://d748sitsi67g" path="res://Assets/tileSets/homeAssets.tres" id="1_2m37k"]
 [ext_resource type="PackedScene" uid="uid://6sb2bn2nrbyw" path="res://player/personaje.tscn" id="2_3qpfn"]
 
 [node name="House" type="Node2D"]
@@ -8,7 +8,7 @@ y_sort_enabled = true
 
 [node name="player" parent="." instance=ExtResource("2_3qpfn")]
 z_index = 3
-position = Vector2(127, 152)
+position = Vector2(97, 49)
 
 [node name="Camara" type="Camera2D" parent="player"]
 position = Vector2(7, 1)

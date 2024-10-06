@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://0f885ir83mlt"]
 
-[ext_resource type="Texture2D" uid="uid://l2qqyfhftikw" path="res://assets/backgrounds/rios.png" id="1_65din"]
+[ext_resource type="Texture2D" uid="uid://l2qqyfhftikw" path="res://Assets/backgrounds/rios.png" id="1_65din"]
 [ext_resource type="Script" path="res://scrips/river.gd" id="2_qxkij"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g7k8e"]

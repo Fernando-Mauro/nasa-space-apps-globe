@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://bjrmv3oy1l78f"]
+
+[ext_resource type="Texture2D" uid="uid://sbo16pms5nh4" path="res://Assets/animals/kitchen.png" id="1_17ei1"]
+[ext_resource type="Script" path="res://kitchen.gd" id="2_2brjb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_53i65"]
+atlas = ExtResource("1_17ei1")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x5m44"]
+atlas = ExtResource("1_17ei1")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c5m5k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_53i65")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x5m44")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="kitchen" type="AnimatedSprite2D" node_paths=PackedStringArray("animated")]
+position = Vector2(130, 54)
+sprite_frames = SubResource("SpriteFrames_c5m5k")
+frame_progress = 0.170268
+script = ExtResource("2_2brjb")
+animated = NodePath(".")
