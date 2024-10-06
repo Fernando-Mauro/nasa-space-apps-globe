@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqr3pv4js5hk2"
-path="res://.godot/imported/tileset-pasto.png-0b3e8b5ae14cfedf06d72b9d47bd22b4.ctex"
+uid="uid://b2715pwh1adhm"
+path="res://.godot/imported/idleMaya.png-9a788893f5fa98e54ef8f330dd9a2341.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/backgrounds/tileset-pasto.png"
-dest_files=["res://.godot/imported/tileset-pasto.png-0b3e8b5ae14cfedf06d72b9d47bd22b4.ctex"]
+source_file="res://Assets/portraits/idleMaya.png"
+dest_files=["res://.godot/imported/idleMaya.png-9a788893f5fa98e54ef8f330dd9a2341.ctex"]
 
 [params]
 

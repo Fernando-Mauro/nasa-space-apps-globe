@@ -81,8 +81,6 @@ height = 20.0
 y_sort_enabled = true
 collision_layer = 2
 script = ExtResource("1_811yv")
-v_speed = 25
-h_speed = 50
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1

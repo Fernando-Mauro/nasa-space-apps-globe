@@ -1,6 +1,6 @@
 extends CharacterBody2D
-@export var v_speed = 200
-@export var h_speed = 200
+@export var v_speed = 70	
+@export var h_speed = 115
 
 	
 func _ready():
@@ -35,10 +35,7 @@ func camera_location():
 func p_animation(_movement):
 	var anim = $AnimatedSprite2D
 	
-	if velocity.x > 0 :
-		anim.flip_h = false
-	elif velocity.x < 0:
-		anim.flip_h = true
+	anim.flip_h = velocity.x < 0
 	if velocity.x == 0 and velocity.y == 0:
 		anim.play("side_idle")
 	else:

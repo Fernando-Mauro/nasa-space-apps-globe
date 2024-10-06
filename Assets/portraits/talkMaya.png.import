@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqr3pv4js5hk2"
-path="res://.godot/imported/tileset-pasto.png-0b3e8b5ae14cfedf06d72b9d47bd22b4.ctex"
+uid="uid://c8dxmbk3nj0jw"
+path="res://.godot/imported/talkMaya.png-f1393ac085ea536d250254f199d1068b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/backgrounds/tileset-pasto.png"
-dest_files=["res://.godot/imported/tileset-pasto.png-0b3e8b5ae14cfedf06d72b9d47bd22b4.ctex"]
+source_file="res://Assets/portraits/talkMaya.png"
+dest_files=["res://.godot/imported/talkMaya.png-f1393ac085ea536d250254f199d1068b.ctex"]
 
 [params]
 
