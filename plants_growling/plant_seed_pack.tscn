@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://cvsxmxe2xnec"]
 
-[ext_resource type="Texture2D" uid="uid://dpx1t4h6v4mj7" path="res://Assets/plants/cosas-granja.png" id="1_ah70v"]
+[ext_resource type="Texture2D" uid="uid://dpx1t4h6v4mj7" path="res://assets/plants/cosas-granja.png" id="1_ah70v"]
 [ext_resource type="Script" path="res://scrips/plant_seed_pack.gd" id="1_rfchf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mgwox"]

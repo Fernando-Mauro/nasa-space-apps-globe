@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=4 uid="uid://b01u8xgxmkivp"]
 
 [ext_resource type="Script" path="res://scenes/world.gd" id="1_hylql"]
-[ext_resource type="TileSet" uid="uid://d4k0gdsm72gs4" path="res://Assets/tileSets/worldAssets.tres" id="2_ovh1b"]
+[ext_resource type="TileSet" uid="uid://d4k0gdsm72gs4" path="res://assets/tileSets/worldassets.tres" id="2_ovh1b"]
 [ext_resource type="PackedScene" uid="uid://6sb2bn2nrbyw" path="res://player/personaje.tscn" id="3_h0gln"]
 [ext_resource type="PackedScene" uid="uid://0wicepdd8mu1" path="res://player/perro.tscn" id="4_jaiab"]
 [ext_resource type="PackedScene" uid="uid://d2l5q6wuhynmx" path="res://ui_scenes/key_pressing_prompt.tscn" id="5_pcbhb"]

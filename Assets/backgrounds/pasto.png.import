@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dg2d7cjuyhjnt"
-path="res://.godot/imported/pasto.png-8e48e7b21bdd3cee7d5808247924d8e3.ctex"
+path="res://.godot/imported/pasto.png-b64dcf5830d126bd90938853d2c4777e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/backgrounds/pasto.png"
-dest_files=["res://.godot/imported/pasto.png-8e48e7b21bdd3cee7d5808247924d8e3.ctex"]
+source_file="res://assets/backgrounds/pasto.png"
+dest_files=["res://.godot/imported/pasto.png-b64dcf5830d126bd90938853d2c4777e.ctex"]
 
 [params]
 

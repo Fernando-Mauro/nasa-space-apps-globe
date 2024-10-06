@@ -1,20 +1,19 @@
-[gd_scene load_steps=27 format=3 uid="uid://ciwymoyvm47l5"]
+[gd_scene load_steps=26 format=3 uid="uid://ciwymoyvm47l5"]
 
 [ext_resource type="Script" path="res://scenes/computer.gd" id="1_43ijm"]
-[ext_resource type="Texture2D" uid="uid://dfwpsejqrxsn3" path="res://Assets/computer/PatchRegular.png" id="1_hvmbc"]
-[ext_resource type="FontFile" uid="uid://dw8fmqxrn3vqv" path="res://Assets/fonts/W95FA.otf" id="1_wcknm"]
-[ext_resource type="Texture2D" uid="uid://basqeo7de8cb7" path="res://Assets/computer/PatchInverted.png" id="2_xga6l"]
-[ext_resource type="Texture2D" uid="uid://ogmnaeguk4oa" path="res://Assets/computer/Flag.png" id="3_0nafy"]
-[ext_resource type="Texture2D" uid="uid://cckmbke5h1rny" path="res://Assets/computer/todo.png" id="6_klrwu"]
-[ext_resource type="Texture2D" uid="uid://rvt5gj7mqnii" path="res://Assets/computer/book.png" id="7_bp4gh"]
-[ext_resource type="Texture2D" uid="uid://cilqkauw0m1gp" path="res://Assets/computer/globe_logo.png" id="7_kvw4r"]
-[ext_resource type="Texture2D" uid="uid://b2gcpe2qlt8li" path="res://Assets/computer/stadistics.png" id="8_5nfgo"]
+[ext_resource type="Texture2D" uid="uid://dfwpsejqrxsn3" path="res://assets/computer/PatchRegular.png" id="1_hvmbc"]
+[ext_resource type="Texture2D" uid="uid://basqeo7de8cb7" path="res://assets/computer/PatchInverted.png" id="2_xga6l"]
+[ext_resource type="Texture2D" uid="uid://ogmnaeguk4oa" path="res://assets/computer/Flag.png" id="3_0nafy"]
+[ext_resource type="Texture2D" uid="uid://cckmbke5h1rny" path="res://assets/computer/todo.png" id="6_klrwu"]
+[ext_resource type="Texture2D" uid="uid://rvt5gj7mqnii" path="res://assets/computer/book.png" id="7_bp4gh"]
+[ext_resource type="Texture2D" uid="uid://cilqkauw0m1gp" path="res://assets/computer/globe_logo.png" id="7_kvw4r"]
+[ext_resource type="Texture2D" uid="uid://b2gcpe2qlt8li" path="res://assets/computer/stadistics.png" id="8_5nfgo"]
 [ext_resource type="VideoStream" path="res://assets/video/globeProgram.ogv" id="8_d3ryk"]
 [ext_resource type="Script" path="res://scenes/glosary_window_option.gd" id="8_se4dr"]
 [ext_resource type="PackedScene" uid="uid://dwyy6nh75akuu" path="res://scenes/glosary-scene.tscn" id="9_spdqh"]
-[ext_resource type="PackedScene" path="res://scenes/text-scene.tscn" id="10_vebga"]
-[ext_resource type="FontFile" path="C:/Users/anaih/nasa-space-apps-globe/Assets/fonts/W95FA.otf" id="12_2g62s"]
-[ext_resource type="Texture2D" uid="uid://cvlx0dyibj1vn" path="res://Assets/computer/plomo.png" id="15_5y4c7"]
+[ext_resource type="PackedScene" uid="uid://df6u6j54dhs32" path="res://scenes/text-scene.tscn" id="10_vebga"]
+[ext_resource type="FontFile" uid="uid://dw8fmqxrn3vqv" path="res://assets/fonts/W95FA.otf" id="12_2g62s"]
+[ext_resource type="Texture2D" uid="uid://cvlx0dyibj1vn" path="res://assets/computer/plomo.png" id="15_5y4c7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xnhcm"]
 
@@ -57,13 +56,7 @@ content_margin_right = 50.0
 content_margin_bottom = 50.0
 texture = ExtResource("7_kvw4r")
 
-<<<<<<< HEAD
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_r7p3n"]
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o3ibi"]
-=======
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ub8v1"]
->>>>>>> ca60aef380e602d7316c3ccaae94d1d8bdd250f9
 content_margin_left = 50.0
 content_margin_top = 50.0
 content_margin_right = 50.0
@@ -142,7 +135,7 @@ theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("1_wcknm")
+theme_override_fonts/font = ExtResource("12_2g62s")
 theme_override_font_sizes/font_size = 45
 theme_override_styles/hover = SubResource("StyleBoxTexture_2da1i")
 theme_override_styles/normal = SubResource("StyleBoxTexture_aosno")
@@ -172,7 +165,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("1_wcknm")
+theme_override_fonts/font = ExtResource("12_2g62s")
 theme_override_font_sizes/font_size = 45
 text = "12:30 PM"
 horizontal_alignment = 1

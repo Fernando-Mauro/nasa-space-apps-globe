@@ -10,7 +10,7 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/backgrounds/cuadrosYExtra.png"
+source_file="res://assets/backgrounds/cuadrosYExtra.png"
 dest_files=["res://.godot/imported/cuadrosYExtra.png-dadde18c807f874457c5fb0466c9c543.ctex"]
 
 [params]

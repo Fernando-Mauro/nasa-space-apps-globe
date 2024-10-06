@@ -1,8 +1,8 @@
 [gd_scene load_steps=23 format=3 uid="uid://0wicepdd8mu1"]
 
 [ext_resource type="Script" path="res://player/perro.gd" id="1_i4s64"]
-[ext_resource type="Texture2D" uid="uid://bdyjxm8bstpwa" path="res://Assets/perro/perro.png" id="3_6tws4"]
-[ext_resource type="Texture2D" uid="uid://bt1dswe085uos" path="res://Assets/perro/perroflaco.png" id="4_q00yp"]
+[ext_resource type="Texture2D" uid="uid://bdyjxm8bstpwa" path="res://assets/perro/perro.png" id="3_6tws4"]
+[ext_resource type="Texture2D" uid="uid://bt1dswe085uos" path="res://assets/perro/perroflaco.png" id="4_q00yp"]
 [ext_resource type="AudioStream" uid="uid://cfv6ak6rhqd2g" path="res://sounds/player/footstep.wav" id="4_sm1ky"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m41cy"]

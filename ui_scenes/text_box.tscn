@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://critukwgst15d"]
 
 [ext_resource type="Script" path="res://ui_scenes/text_box.gd" id="1_8any8"]
-[ext_resource type="Texture2D" uid="uid://bpndbkbypq84m" path="res://Assets/UI/textBoxSmall.png" id="1_fxdlc"]
-[ext_resource type="FontFile" uid="uid://b4lf3edghytvx" path="res://Assets/UI/dogicapixel.ttf" id="2_jf812"]
-[ext_resource type="Texture2D" uid="uid://cv4kavd10j8r6" path="res://Assets/UI/boton.png" id="3_xga0c"]
+[ext_resource type="Texture2D" uid="uid://bpndbkbypq84m" path="res://assets/UI/textBoxSmall.png" id="1_fxdlc"]
+[ext_resource type="FontFile" uid="uid://b4lf3edghytvx" path="res://assets/UI/dogicapixel.ttf" id="2_jf812"]
+[ext_resource type="Texture2D" uid="uid://cv4kavd10j8r6" path="res://assets/UI/boton.png" id="3_xga0c"]
 
 [node name="text_box" type="MarginContainer"]
 offset_right = 22.0

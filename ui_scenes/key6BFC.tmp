@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://d2l5q6wuhynmx"]
 
-[ext_resource type="Texture2D" uid="uid://cy6lrbh6sndpc" path="res://Assets/UI/input_prompts/key_released.png" id="1_gvy4o"]
+[ext_resource type="Texture2D" uid="uid://cy6lrbh6sndpc" path="res://assets/UI/input_prompts/key_released.png" id="1_gvy4o"]
 [ext_resource type="Script" path="res://key_pressing_prompt.gd" id="2_arctw"]
-[ext_resource type="Texture2D" uid="uid://cca4d0uprsowi" path="res://Assets/UI/input_prompts/key_pressed.png" id="3_kgdlo"]
+[ext_resource type="Texture2D" uid="uid://cca4d0uprsowi" path="res://assets/UI/input_prompts/key_pressed.png" id="3_kgdlo"]
 
 [sub_resource type="Animation" id="Animation_mo27m"]
 resource_name = "key_pressed"

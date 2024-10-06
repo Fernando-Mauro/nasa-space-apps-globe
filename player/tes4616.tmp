@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://6sb2bn2nrbyw" path="res://player/personaje.tscn" id="1_xmfem"]
 [ext_resource type="PackedScene" uid="uid://luueblsy7262" path="res://player/perro.tscn" id="2_5rtrh"]
-[ext_resource type="Texture2D" uid="uid://b0xmn700tn6tm" path="res://Assets/muebles/interior/furniture pack grey outline.png" id="3_vbot0"]
+[ext_resource type="Texture2D" uid="uid://b0xmn700tn6tm" path="res://assets/muebles/interior/furniture pack grey outline.png" id="3_vbot0"]
 [ext_resource type="PackedScene" uid="uid://critukwgst15d" path="res://ui_scenes/text_box.tscn" id="4_2s8y8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1mhr5"]

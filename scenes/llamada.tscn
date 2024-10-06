@@ -1,9 +1,9 @@
 [gd_scene load_steps=71 format=4 uid="uid://dfk846t5ncs14"]
 
 [ext_resource type="Script" path="res://scenes/llamada.gd" id="1_celyt"]
-[ext_resource type="Texture2D" uid="uid://bstcj83l220pq" path="res://Assets/backgrounds/fondoExtra.png" id="1_dt176"]
-[ext_resource type="Texture2D" uid="uid://b2715pwh1adhm" path="res://Assets/portraits/idleMaya.png" id="2_tff65"]
-[ext_resource type="Texture2D" uid="uid://c8dxmbk3nj0jw" path="res://Assets/portraits/talkMaya.png" id="3_ra3mq"]
+[ext_resource type="Texture2D" uid="uid://bstcj83l220pq" path="res://assets/backgrounds/fondoExtra.png" id="1_dt176"]
+[ext_resource type="Texture2D" uid="uid://b2715pwh1adhm" path="res://assets/portraits/idleMaya.png" id="2_tff65"]
+[ext_resource type="Texture2D" uid="uid://c8dxmbk3nj0jw" path="res://assets/portraits/talkMaya.png" id="3_ra3mq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e4qre"]
 texture = ExtResource("1_dt176")

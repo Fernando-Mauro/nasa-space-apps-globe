@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=3 uid="uid://6sb2bn2nrbyw"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_811yv"]
-[ext_resource type="Texture2D" uid="uid://dcnjuua6xbktm" path="res://Assets/player/player_2.png" id="2_saibn"]
+[ext_resource type="Texture2D" uid="uid://dcnjuua6xbktm" path="res://assets/player/player_2.png" id="2_saibn"]
 [ext_resource type="AudioStream" uid="uid://cfv6ak6rhqd2g" path="res://sounds/player/footstep.wav" id="3_d2omb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4eyu5"]
