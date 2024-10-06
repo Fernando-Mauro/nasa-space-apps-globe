@@ -3,7 +3,19 @@ LANGUAGE,Cambiar idioma,Change language,adsjhad
 START,Iniciar juego,Start game,kjadshkadhs
 OPTIONS,Opciones,Options,xnmbnz
 EXIT,Salir,Exit,2yiqewi
-GLOSARY_0,"Bienvenid@ a la aventura en la granja de María José. A pesar de los desafíos que la han devastado, tu objetivo es devolverle la vida. Cada día recibirás nueva información que te ayudará a reparar y mejorar la granja, enfrentando los retos del clima y asegurando su prosperidad.En esta sección de glosario , encontrarás las descripciones detalladas y consejos que te serán útiles durante el juego. Mantente atent@ a las actualizaciones diarias que te proporcionarán valiosos datos para alcanzar el objetivo de restaurar la granja a su máximo esplendor.","Welcome to the adventure on Maria Jose's farm. Despite the challenges that have devastated the farm, your goal is to bring it back to life. Every day you will receive new information that will help you repair and improve the farm, facing the challenges of the weather and ensuring its prosperity. Stay tuned for daily updates that will provide you with valuable data to achieve the goal of restoring the farm to its maximum splendor",
-GLOSARY_1,No se que poner aqui,I don't know man,
-GLOSARY_2,CTM AMLO,ya se fue w,
-GLOSARY_3,PEJECOINS,SHEINTAVOS,
+GLOSARY_0,"Bienvenid@ a la aventura en la granja de María José. A pesar de los desafíos que la han devastado, tu objetivo es devolverle la vida. Cada día recibirás nueva información que te ayudará a reparar y mejorar la granja, enfrentando los retos del clima y asegurando su prosperidad.En esta sección de glosario , encontrarás las descripciones detalladas y consejos que te serán útiles durante el juego. Mantente atent@ a las actualizaciones diarias que te proporcionarán valiosos datos para alcanzar el objetivo de restaurar la granja a su máximo esplendor.","Welcome to the adventure on Maria Jose's farm. Despite the challenges that have devastated the farm, your goal is to bring it back to life. Every day you will receive new information that will help you repair and improve the farm, facing the challenges of the weather and ensuring its prosperity. Stay tuned for daily updates that will provide you with valuable data to achieve the goal of restoring the farm to its maximum splendor",HOLA
+GLOSARY_1,"¿Qué es el PH? El pH es una medida que indica la acidez o la alcalinidad del agua. 
+
+¿Qué significa el nivel del PH? Un pH de 7 se considera neutral, mientras que cualquier pH por debajo de 7 es ácido y cualquier pH por encima de 7 es alcalino. 
+
+¿Cómo afecta el nivel de acides a los cultivos? Si el pH es demasiado ácido o alcalino, los cultivos pueden no crecer correctamente y la cosecha puede ser deficiente. Por lo general, un pH del suelo de 6,0-7,5 es aceptable para la mayoría de las plantas. ","Algorithm: A set of ordered and finite steps to solve a problem or perform a task.
+
+Compiler: Program that translates source code written in a programming language into an executable machine language.
+
+Recursion: A programming technique in which a function calls itself to solve a problem by breaking it into smaller subproblems.",adsjhad
+GLOSARY_2,"El plomo es un elemento tóxico que se encuentra en todo nuestro planeta. La intoxicación por plomo es silenciosa. En niveles altos, el plomo en el cuerpo ocasiona daños permanentes en el cerebro y el sistema nervioso. Estos daños pueden provocar convulsiones, pérdida del control muscular y coma. ",ya se fue w,a
+GLOSARY_3,PEJECOINS,SHEINTAVOS,a
+TITLE-1,PH del Suelo,,
+TITLE-2,Plomo en el agua,,
+,,,
+0,,,

@@ -3,8 +3,9 @@ extends Window
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$MarginContainer/VBoxContainer/OptionButton.select(0)
-	_on_option_button_item_selected(0)
+	pass
+	#$MarginContainer/VBoxContainer/OptionButton.select(0)
+	#_on?_option_button_item_selected(0)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 Global="*res://global.gd"
 DialogManager="*res://ui_scenes/dialog_manager.gd"
 InteractionManager="*res://interaction/InteractionManager.tscn"
+GlobalComputer="*res://scenes/global_computer.gd"
 
 [display]
 
@@ -87,7 +88,7 @@ computer={
 [internationalization]
 
 locale/translation_remaps={}
-locale/translations=PackedStringArray("res://translation/tr.en.translation", "res://translation/tr.es.translation")
+locale/translations=PackedStringArray("res://translation/tr.de.translation", "res://translation/tr.en.translation", "res://translation/tr.es.translation")
 
 [rendering]
 
