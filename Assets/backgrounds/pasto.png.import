@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ofqkojmpy7jo"
-path="res://.godot/imported/tileset-pasto.png-0b3e8b5ae14cfedf06d72b9d47bd22b4.ctex"
+uid="uid://dg2d7cjuyhjnt"
+path="res://.godot/imported/pasto.png-8e48e7b21bdd3cee7d5808247924d8e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/backgrounds/tileset-pasto.png"
-dest_files=["res://.godot/imported/tileset-pasto.png-0b3e8b5ae14cfedf06d72b9d47bd22b4.ctex"]
+source_file="res://Assets/backgrounds/pasto.png"
+dest_files=["res://.godot/imported/pasto.png-8e48e7b21bdd3cee7d5808247924d8e3.ctex"]
 
 [params]
 

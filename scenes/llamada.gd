@@ -3,8 +3,9 @@ extends Node2D
 @export var day = true
 var focusChar:bool
 func _ready() -> void:
-	$focusChar.play("talking")
+	$focusChar.play("idle")
 	$nonFocusChar.play("idle")
+	$text_box._display_letter()
 	dialogSequencer()
 #Estructura de dialogo
 # DIALOG_CALL_DAY(whichDay)_(morning\night)_(number)
