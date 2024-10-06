@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2715pwh1adhm"
-path="res://.godot/imported/idleMaya.png-6e53d92f8bb2b53b4561e026ebdb8f37.ctex"
+path="res://.godot/imported/idleMaya.png-9a788893f5fa98e54ef8f330dd9a2341.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/idleMaya.png"
-dest_files=["res://.godot/imported/idleMaya.png-6e53d92f8bb2b53b4561e026ebdb8f37.ctex"]
+source_file="res://Assets/portraits/idleMaya.png"
+dest_files=["res://.godot/imported/idleMaya.png-9a788893f5fa98e54ef8f330dd9a2341.ctex"]
 
 [params]
 

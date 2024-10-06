@@ -1,10 +1,10 @@
 [gd_resource type="TileSet" load_steps=11 format=3 uid="uid://d4k0gdsm72gs4"]
 
-[ext_resource type="Texture2D" uid="uid://b22ucd8q2n86f" path="res://assets/foreground/casa.png" id="1_ju508"]
-[ext_resource type="Texture2D" uid="uid://l2qqyfhftikw" path="res://assets/backgrounds/rios.png" id="2_plo4l"]
-[ext_resource type="Texture2D" uid="uid://0qxk5inkl87j" path="res://assets/plants/arboles.png" id="3_jrfnn"]
-[ext_resource type="Texture2D" uid="uid://dfh0c28no8b10" path="res://assets/plants/newGranja.png" id="4_3snq0"]
-[ext_resource type="Texture2D" uid="uid://bqr3pv4js5hk2" path="res://assets/backgrounds/tileset-pasto.png" id="4_kee4s"]
+[ext_resource type="Texture2D" uid="uid://b22ucd8q2n86f" path="res://Assets/foreground/casa.png" id="1_ju508"]
+[ext_resource type="Texture2D" uid="uid://l2qqyfhftikw" path="res://Assets/backgrounds/rios.png" id="2_plo4l"]
+[ext_resource type="Texture2D" uid="uid://0qxk5inkl87j" path="res://Assets/plants/arboles.png" id="3_jrfnn"]
+[ext_resource type="Texture2D" uid="uid://dfh0c28no8b10" path="res://Assets/plants/newGranja.png" id="4_3snq0"]
+[ext_resource type="Texture2D" uid="uid://bqr3pv4js5hk2" path="res://Assets/backgrounds/tileset-pasto.png" id="4_kee4s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0ewgw"]
 texture = ExtResource("1_ju508")

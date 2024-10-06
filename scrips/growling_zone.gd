@@ -62,17 +62,17 @@ func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) 
 	if Input.is_action_just_pressed("click"):
 		if plant_grown:
 			if plant == 1:
-				Global.numCarrots += 1
+				Global.numCorns += 1
 				plantGrowling = false #Ya no existen plantas creciendo ahi
 				plant_grown = false #No existe una planta madura ahi
 				$plants.play("none") #Activamos la animacion que no existe nada creciendo ahi
 			if plant == 2:
-				Global.numOnions += 1
+				Global.numTomatoes += 1
 				plantGrowling = false
 				plant_grown = false
 				$plants.play("none")
 			else:
 				pass #Para evitar errores de un cultivo erroneo (Que se modifique el valor de "plant" a un numero diferente de '1'  o '2'
 			
-			print("Zanahorias: " + str(Global.numCarrots)) #Imprime la cantidad de cultivos cosechados de cierto tipo
-			print("Cebollas: " + str(Global.numOnions))
+			print("Zanahorias: " + str(Global.numCorns)) #Imprime la cantidad de cultivos cosechados de cierto tipo
+			print("Cebollas: " + str(Global.numTomatoes))

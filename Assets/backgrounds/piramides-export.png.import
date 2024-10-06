@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://l2qqyfhftikw"
-path="res://.godot/imported/rios.png-a7e57e6689779327285fd7463dcfb9e7.ctex"
+uid="uid://bo8l1qflrsgix"
+path="res://.godot/imported/piramides-export.png-96f266e23c9d0e065d7c65a03dd074bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/backgrounds/rios.png"
-dest_files=["res://.godot/imported/rios.png-a7e57e6689779327285fd7463dcfb9e7.ctex"]
+source_file="res://Assets/backgrounds/piramides-export.png"
+dest_files=["res://.godot/imported/piramides-export.png-96f266e23c9d0e065d7c65a03dd074bf.ctex"]
 
 [params]
 

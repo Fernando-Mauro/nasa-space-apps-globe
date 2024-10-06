@@ -3,9 +3,9 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	$"VBoxContainer/computer-button".text = tr("COMPUTER")
 	$"VBoxContainer/start-button".text = tr("START")
 	$"VBoxContainer/options-button".text = tr("OPTIONS")
-	$"VBoxContainer/exit-button".text = tr("EXIT")
 	$"VBoxContainer/language-button".text = tr("LANGUAGE")
 
 
@@ -14,20 +14,16 @@ func _process(delta: float) -> void:
 	pass
 
 
-func _on_start_pressed() -> void:
-	print("start pressed")
+func _on_computer_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/computer.tscn")
 
+func _on_startbutton_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/world.tscn")
 
 func _on_options_pressed() -> void:
 	print("options pressed")
+	
 
-
-func _on_exit_pressed() -> void:
-	get_tree().quit()
-
-
-func _on_computer_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/computer.tscn")
 	
 func _on_language_pressed():
 	if Global.language_act >= Global.language_codes.size()-1:
@@ -38,7 +34,7 @@ func _on_language_pressed():
 	updateUI()
 
 func updateUI():
+	$"VBoxContainer/computer-button".text = tr("COMPUTER")
 	$"VBoxContainer/start-button".text = tr("START")
 	$"VBoxContainer/options-button".text = tr("OPTIONS")
-	$"VBoxContainer/exit-button".text = tr("EXIT")
 	$"VBoxContainer/language-button".text = tr("LANGUAGE")

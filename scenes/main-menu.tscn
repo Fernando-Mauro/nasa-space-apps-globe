@@ -1,12 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://bawxh73uehc5i"]
+[gd_scene load_steps=9 format=3 uid="uid://bawxh73uehc5i"]
 
-[ext_resource type="Texture2D" uid="uid://0fwa8ih1hx45" path="res://assets/backgrounds/menu-background.webp" id="1_7405b"]
 [ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_ac7mk"]
-[ext_resource type="FontFile" uid="uid://btrmmw5i42w0" path="res://assets/fonts/GrapeSoda.ttf" id="2_h5fjn"]
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ghstu"]
-texture = ExtResource("1_7405b")
-modulate_color = Color(0.537011, 0.537011, 0.537011, 1)
+[ext_resource type="FontFile" uid="uid://btrmmw5i42w0" path="res://Assets/fonts/GrapeSoda.ttf" id="2_h5fjn"]
+[ext_resource type="Texture2D" uid="uid://bo8l1qflrsgix" path="res://Assets/backgrounds/piramides-export.png" id="4_kklgn"]
+[ext_resource type="Script" path="res://scenes/texture_rect.gd" id="4_o8p2v"]
+[ext_resource type="Texture2D" uid="uid://dekpdjkk2mn2m" path="res://Assets/computer/letras_1.png" id="4_prvxk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m8i60"]
 bg_color = Color(1, 0.541176, 0, 1)
@@ -14,6 +12,21 @@ corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ermp6"]
+atlas = ExtResource("4_prvxk")
+region = Rect2(0, 0, 1024, 576)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xchpx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ermp6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Main-menu" type="Control"]
 layout_mode = 3
@@ -23,66 +36,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ac7mk")
-
-[node name="Panel" type="Panel" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_ghstu")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -245.5
-offset_top = -103.5
-offset_right = 245.5
-offset_bottom = 103.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/separation = 16
-
-[node name="computer-button" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_m8i60")
-text = "a"
-
-[node name="start-button" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_m8i60")
-
-[node name="options-button" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_m8i60")
-
-[node name="exit-button" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_m8i60")
-
-[node name="language-button" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_m8i60")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -103,8 +56,70 @@ theme_override_fonts/font = ExtResource("2_h5fjn")
 theme_override_font_sizes/font_size = 50
 text = "Béleguí's Story"
 
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1282.0
+offset_bottom = 718.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_kklgn")
+script = ExtResource("4_o8p2v")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -245.0
+offset_top = 18.0
+offset_right = 246.0
+offset_bottom = 251.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 16
+
+[node name="computer-button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_m8i60")
+
+[node name="start-button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_m8i60")
+
+[node name="options-button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_m8i60")
+
+[node name="language-button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_m8i60")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(670, 184)
+scale = Vector2(0.824653, 0.824653)
+sprite_frames = SubResource("SpriteFrames_xchpx")
+
 [connection signal="pressed" from="VBoxContainer/computer-button" to="." method="_on_computer_pressed"]
-[connection signal="pressed" from="VBoxContainer/start-button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/start-button" to="." method="_on_startbutton_pressed"]
 [connection signal="pressed" from="VBoxContainer/options-button" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="VBoxContainer/exit-button" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="VBoxContainer/language-button" to="." method="_on_language_pressed"]
