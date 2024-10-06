@@ -1,11 +1,10 @@
-[gd_scene load_steps=24 format=4 uid="uid://dolbu2alj0hpc"]
+[gd_scene load_steps=23 format=4 uid="uid://dolbu2alj0hpc"]
 
 [ext_resource type="Script" path="res://scenes/llamada.gd" id="1_celyt"]
 [ext_resource type="Texture2D" uid="uid://bstcj83l220pq" path="res://Assets/backgrounds/fondoExtra.png" id="2_mg5h0"]
 [ext_resource type="Texture2D" uid="uid://c62y6ana7hdhv" path="res://Assets/portraits/fondo.png" id="3_7bue8"]
 [ext_resource type="Texture2D" uid="uid://b77ahvddldqbe" path="res://Assets/portraits/videollamadamaria.png" id="4_4o4vf"]
 [ext_resource type="Texture2D" uid="uid://bqv1yueehfcw3" path="res://Assets/portraits/cientifico.png" id="4_pqntl"]
-[ext_resource type="PackedScene" uid="uid://critukwgst15d" path="res://ui_scenes/text_box.tscn" id="6_codc2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ay7a5"]
 texture = ExtResource("2_mg5h0")
@@ -159,10 +158,3 @@ scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_6ou3m")
 animation = &"idle"
 centered = false
-
-[node name="text_box" parent="." instance=ExtResource("6_codc2")]
-offset_left = 94.0
-offset_top = 105.0
-offset_right = 148.0
-offset_bottom = 128.0
-text = "Hola como estas"

@@ -89,6 +89,7 @@ computer={
 
 locale/translation_remaps={}
 locale/translations=PackedStringArray("res://translation/tr.de.translation", "res://translation/tr.en.translation", "res://translation/tr.es.translation")
+locale/test="START"
 
 [rendering]
 

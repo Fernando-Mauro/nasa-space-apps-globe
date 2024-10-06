@@ -5,11 +5,11 @@ var focusChar:bool
 func _ready() -> void:
 	$focusChar.play("idle")
 	$nonFocusChar.play("idle")
-	$text_box._display_letter()
+	#$text_box._display_letter()
 	dialogSequencer()
-#Estructura de dialogo
-# DIALOG_CALL_DAY(whichDay)_(morning\night)_(number)
 
+		#Estructura de dialogo
+		# DIALOG_CALL_DAY(whichDay)_(morning\night)_(number)
 
 func nextDialogGenerator(actDialog):
 	var nextDialog:String
@@ -22,14 +22,24 @@ func nextDialogGenerator(actDialog):
 	return nextDialog
 
 func dialogSelector(dialogKey):
+	if dialogKey == tr(dialogKey):
+		return
 	var dialogDivider = tr(dialogKey).split(":",false,1)
 	focusChar = (dialogDivider[0] == "f")
+	
 	return dialogDivider[1]	
 
 
 
 func dialogSequencer():
 	var nextDialog = 1
-	while (nextDialog < 10):
-		print(nextDialogGenerator(nextDialog))
+	
+	while (true):
+		
+		var nextText = dialogSelector(nextDialogGenerator(nextDialog))
+		
+		if(nextText == null):
+			break
+		
 		nextDialog+=1
+	

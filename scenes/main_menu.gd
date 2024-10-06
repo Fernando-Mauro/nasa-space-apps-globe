@@ -8,7 +8,6 @@ func _ready() -> void:
 	$"VBoxContainer/exit-button".text = tr("EXIT")
 	$"VBoxContainer/language-button".text = tr("LANGUAGE")
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
