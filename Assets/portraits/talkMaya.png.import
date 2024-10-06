@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lgv13ur4fjf4"
-path="res://.godot/imported/Char1.png-f30482b156557d1b84af5a808dbc82da.ctex"
+uid="uid://c8dxmbk3nj0jw"
+path="res://.godot/imported/talkMaya.png-f1393ac085ea536d250254f199d1068b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/portraits/Char1.png"
-dest_files=["res://.godot/imported/Char1.png-f30482b156557d1b84af5a808dbc82da.ctex"]
+source_file="res://Assets/portraits/talkMaya.png"
+dest_files=["res://.godot/imported/talkMaya.png-f1393ac085ea536d250254f199d1068b.ctex"]
 
 [params]
 
