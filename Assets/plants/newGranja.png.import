@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfh0c28no8b10"
-path="res://.godot/imported/newGranja.png-11dbe6120e93e8bd7d272d3a996df6c5.ctex"
+path="res://.godot/imported/newGranja.png-742fe90b634cd211e81f0d927714464e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/plants/newGranja.png"
-dest_files=["res://.godot/imported/newGranja.png-11dbe6120e93e8bd7d272d3a996df6c5.ctex"]
+source_file="res://Assets/plants/newGranja.png"
+dest_files=["res://.godot/imported/newGranja.png-742fe90b634cd211e81f0d927714464e.ctex"]
 
 [params]
 

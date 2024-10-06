@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bb3iaqxpatdt4"
-path="res://.godot/imported/interior_casa.png-b486d57c0ef1a21da42854ef88f5b4be.ctex"
+path="res://.godot/imported/interior_casa.png-bb8e902d011fe4fc3aa06f5b4b214289.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/backgrounds/interior_casa.png"
-dest_files=["res://.godot/imported/interior_casa.png-b486d57c0ef1a21da42854ef88f5b4be.ctex"]
+source_file="res://Assets/backgrounds/interior_casa.png"
+dest_files=["res://.godot/imported/interior_casa.png-bb8e902d011fe4fc3aa06f5b4b214289.ctex"]
 
 [params]
 
