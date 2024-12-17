@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqr3pv4js5hk2"
-path="res://.godot/imported/tileset-pasto.png-31dc55f8b26c4f359e0cd78343bb962b.ctex"
+path="res://.godot/imported/tileset-pasto.png-0b3e8b5ae14cfedf06d72b9d47bd22b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/backgrounds/tileset-pasto.png"
-dest_files=["res://.godot/imported/tileset-pasto.png-31dc55f8b26c4f359e0cd78343bb962b.ctex"]
+source_file="res://Assets/backgrounds/tileset-pasto.png"
+dest_files=["res://.godot/imported/tileset-pasto.png-0b3e8b5ae14cfedf06d72b9d47bd22b4.ctex"]
 
 [params]
 

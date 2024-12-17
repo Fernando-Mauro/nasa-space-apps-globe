@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8dxmbk3nj0jw"
-path="res://.godot/imported/talkMaya.png-b48205f9aa1bcc9c30261045b435760e.ctex"
+path="res://.godot/imported/talkMaya.png-f1393ac085ea536d250254f199d1068b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portraits/talkMaya.png"
-dest_files=["res://.godot/imported/talkMaya.png-b48205f9aa1bcc9c30261045b435760e.ctex"]
+source_file="res://Assets/portraits/talkMaya.png"
+dest_files=["res://.godot/imported/talkMaya.png-f1393ac085ea536d250254f199d1068b.ctex"]
 
 [params]
 

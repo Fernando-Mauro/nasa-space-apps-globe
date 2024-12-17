@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0qxk5inkl87j"
-path="res://.godot/imported/arboles.png-45c49b689d7f083857f875c92ab6769b.ctex"
+path="res://.godot/imported/arboles.png-5fdbebdf20b0eb0ae1af2fe79409bef8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/plants/arboles.png"
-dest_files=["res://.godot/imported/arboles.png-45c49b689d7f083857f875c92ab6769b.ctex"]
+source_file="res://Assets/plants/arboles.png"
+dest_files=["res://.godot/imported/arboles.png-5fdbebdf20b0eb0ae1af2fe79409bef8.ctex"]
 
 [params]
 
